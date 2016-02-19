@@ -1,0 +1,152 @@
+// Btns
+.btn-default:hover{
+  border-color: mix( $brand-primary, white, 75% );
+  background: mix( $brand-primary, white, 75% );
+}
+
+// Icons
+.btn[class*="icon-"]:before{
+  // align-right
+  float: right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+// Header
+.main-entity-logo{
+  visibility: hidden;
+  height: 50px;
+  background: white;
+}
+
+.navbar-default .navbar-nav{
+  [class*="icon-"]:before{
+    display: none;
+  }
+
+  > li > a{
+    text-transform: uppercase;
+  }
+}
+
+// Section Header
+.section-header .page-title{
+  color: black;
+}
+
+// Social Sharing
+.social-sharing-toolbox li a{
+  background-color: $brand-primary;
+}
+
+// Data Sources
+.data-sources {
+  background: $brand-terciary;
+  .alert{
+   background: mix( $brand-terciary, white, 50% );
+  }
+}
+
+// Data Downloads
+.panel-downloads{
+  border-color: $brand-secondary;
+  background: $brand-secondary;
+
+  a{
+    color: $brand-primary;
+    //font-weight: $font-weight-300;
+
+    &:hover{
+      color: $text-color;
+    }
+  }
+
+  /*
+  [class*="icon-"]:before{
+    float: none;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  */
+}
+
+// Home
+.home-content .options{
+  background: $brand-secondary;
+
+  .option > div .icon{
+    color: $brand-primary;
+  }
+}
+
+// Budget
+.budget-intro{
+  background: $brand-terciary;
+
+  .budget-step{
+    border: none;
+
+    h3 
+    span{
+      color: $brand-primary;
+      font-weight: $font-weight-400;
+    }
+    b{
+      font-weight: $font-weight-400;
+    }
+    .desc{
+      font-size: 1em;
+      background: $gray-light;
+
+      b{
+        font-weight: $font-weight-400;
+      }
+    }
+  }
+}
+.budget-data{
+  background: $brand-secondary;
+}
+
+// Policies
+.policies-graph{
+  background: white;
+}
+
+.stacked-area-chart-legend .label{
+  
+  &:hover{
+    background: $brand-secondary;
+  }
+}
+
+// Glossary
+.form-search-glossary .btn-default{
+  background: $brand-primary;
+  border-color: $brand-primary;
+}
+.glossary-terms h3, 
+.glossary-terms h4{
+  font-weight: $font-weight-300;
+  
+  &:before{
+    color: $brand-primary;
+  }
+}
+
+// Search
+.search-content .alert{
+  background: $brand-secondary;
+}
+.search-content .panel{
+  border-color: $brand-primary;
+
+  .panel-heading{
+    color: white;
+    background: $brand-primary;
+
+    h3{
+      color: white;
+    }
+  }
+}
