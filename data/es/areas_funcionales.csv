@@ -34,77 +34,76 @@
 9,4,,,Transferencias a otras administraciónes públicas
 #
 # Programas específicos de Pinto
-0,1,1,0,*******Temporal********
+0,1,1,0,DEUDA PUBLICA
 1,1,0,0,*******Temporal_2011********
-1,3,0,0,*******Temporal_2014********
-1,3,2,0,*******Temporal********
-1,3,3,0,*******Temporal_2012********
-1,3,4,0,*******Temporal_2014********
-1,3,5,0,*******Temporal********
-1,5,0,0,*******Temporal_2014********
-1,5,1,0,*******Temporal_2011********
-1,5,5,0,*******Temporal_2014********
-1,6,0,0,*******Temporal_2011********
-1,6,1,0,*******Temporal_2012********
-1,6,2,0,*******Temporal_2012********
-1,6,3,0,*******Temporal_2011********
-1,6,5,0,*******Temporal_2012********
-1,6,9,0,*******Temporal_2013********
-1,7,0,0,*******Temporal_2014********
-1,7,1,0,*******Temporal_2011********
-1,7,2,0,*******Temporal_2012********
-2,3,0,0,*******Temporal_2014********
-2,3,1,0,*******Temporal_2014********
-2,3,1,1,*******Temporal********
-2,3,1,3,*******Temporal********
-2,3,2,0,*******Temporal_2014********
-2,3,3,0,*******Temporal_2013********
-2,4,1,0,*******Temporal********
-3,1,3,0,*******Temporal_2014********
-3,2,0,0,*******Temporal********
-3,2,0,1,*******Temporal********
-3,2,0,2,*******Temporal********
-3,2,0,3,*******Temporal********
-3,2,0,4,*******Temporal********
-3,2,0,5,*******Temporal********
-3,2,0,7,*******Temporal********
-3,2,1,0,*******Temporal_2013********
-3,2,3,0,*******Temporal_2012********
-3,2,4,0,*******Temporal_2014********
-3,3,0,0,*******Temporal_2014********
-3,3,2,0,*******Temporal_2013********
-3,3,3,0,*******Temporal_2013********
-3,3,4,0,*******Temporal********
-3,3,4,3,*******Temporal********
-3,3,5,0,*******Temporal_2014********
-3,3,6,0,*******Temporal_2012********
-3,3,7,0,*******Temporal_2013********
-3,3,8,0,*******Temporal_2012********
-3,4,0,0,*******Temporal_2014********
-3,4,1,0,*******Temporal********
-3,4,2,0,*******Temporal_2013********
-3,5,1,0,*******Temporal_2011********
-4,3,0,0,*******Temporal_2012********
-4,3,1,0,*******Temporal_2013********
-4,3,2,0,*******Temporal_2013********
-4,3,3,0,*******Temporal_2013********
-4,3,9,0,*******Temporal_2011********
-4,4,1,0,*******Temporal_2012********
-4,5,0,0,*******Temporal********
-4,5,9,0,*******Temporal_2012********
-4,6,2,0,*******Temporal_2011********
-4,9,1,0,*******Temporal********
-4,9,2,0,*******Temporal_2013********
-4,9,3,0,*******Temporal_2014********
-9,1,2,0,*******Temporal********
-9,2,0,0,*******Temporal********
-9,2,2,0,*******Temporal_2013********
-9,2,3,0,*******Temporal_2013********
-9,2,4,0,*******Temporal_2014********
-9,2,5,0,*******Temporal_2013********
-9,2,6,0,*******Temporal_2013********
-9,2,9,0,*******Temporal********
-9,3,2,0,*******Temporal********
-9,3,1,0,*******Temporal********
-9,3,3,0,*******Temporal_2013********
-9,3,4,0,*******Temporal_2013********
+1,3,0,0,ADMINISTRACIÓN GENERAL DE LA SEGURIDAD Y PROTECCIÓN CIVIL
+1,3,2,0,SEGURIDAD Y ORDEN PUBLICO
+1,3,3,0,ORDENACIÓN DEL TRÁFICO Y DEL ESTACIONAMIENTO.
+1,3,5,0,PROTECCION CIVIL
+1,5,0,0,ADMINISTRACIÓN GENERAL DE VIVIENDA Y URBANISMO.
+1,5,1,0,URBANISMO
+1,5,5,0,VIAS PUBLICAS
+1,6,0,0,ADMINISTRACION GENERAL
+1,6,1,0,"SANEAMIENTO, ABASTECIMIENTO Y DISTRIBUCIÓN DE AGUAS."
+1,6,2,0,"RECOGIDA, ELIMINACIÓN Y TRATAMIENTO DE RESIDUOS."
+1,6,3,0,LIMPIEZA VIARIA
+1,6,5,0,ALUMBRADO PUBLICO
+1,6,9,0,BIENESTAR COMUNITARIO
+1,7,0,0,ADMINISTRACIÓN GENERAL DEL MEDIO AMBIENTE.
+1,7,1,0,PARQUES Y JARDINES
+1,7,2,0,PROTECCIÓN Y MEJORA DEL MEDIO AMBIENTE.
+2,3,0,0,ADMINISTRACIÓN GENERAL DE SERVICIOS SOCIALES.
+2,3,1,0,ACCIÓN SOCIAL.
+2,3,1,1,ADMINISTRACION GENERAL DE SERV.SOCIALES
+2,3,1,3,PARTICIPACION CIUDADANA
+2,3,2,0,PROMOCIÓN SOCIAL.
+2,3,3,0,ASISTENCIA A PERSONAS DEPENDIENTES.
+2,4,1,0,FOMENTO DEL EMPLEO
+3,1,3,0,ACCIONES PÚBLICAS RELATIVAS A LA SALUD.
+3,2,0,0,ADMINISTRACION GENERAL DE EDUCACION
+3,2,0,1,ADMINISTRACION GENERAL DE EDUCACION
+3,2,0,2,ADMINISTRACION GENERAL DE EDUCACION
+3,2,0,3,ADMINISTRACION GENERAL DE EDUCACION
+3,2,0,4,SERVICIOS COMPLEMENTARIOS DE EDUCACION
+3,2,0,5,ADMINISTRACION GENERAL DE EDUCACION
+3,2,0,7,ADMINISTRACION GENERAL DE EDUCACION
+3,2,1,0,EDUCACIÓN PREESCOLAR Y PRIMARIA.
+3,2,3,0,PROMOCION EDUCATIVA
+3,2,4,0,SERVICIOS COMPLEMENTARIOS DE EDUCACIÓN.
+3,3,0,0,ADMINISTRACIÓN GENERAL DE CULTURA
+3,3,2,0,BIBLIOTECAS Y ARCHIVOS.
+3,3,3,0,MUSEOS Y ARTES PLÁSTICAS.
+3,3,4,0,PROMOCION CULTURAL
+3,3,4,3,OFICINAS DE DEFENSA AL CONSUMIDOR
+3,3,5,0,ARTES ESCÉNICAS.
+3,3,6,0,ARQUEOLOGÍA Y PROTECCIÓN DEL PATRIMONIO HISTÓRICO-ARTÍSTICO
+3,3,7,0,OCIO Y TIEMPO LIBRE
+3,3,8,0,FIESTAS POPULARES Y FESTEJOS
+3,4,0,0,ADMINISTRACIÓN GENERAL DE DEPORTES.
+3,4,1,0,PROMOCION Y FOMENTO DEL DEPORTE
+3,4,2,0,INSTALACIONES DEPORTIVAS.
+3,5,1,0,JUVENTUD E INFANCIA
+4,3,0,0,"ADMÓN GENERAL DE COMERCIO, TURISMO Y PYMES."
+4,3,1,0,COMERCIO
+4,3,2,0,ORDENACIÓN Y PROMOCIÓN TURÍSTICA.
+4,3,3,0,DESARROLLO EMPRESARIAL
+4,3,9,0,OTRAS ACTUACIONES SECTORIALES
+4,4,1,0,"PROMOCIÓN, MANTENIMIENTO Y DESARROLLO DEL TRANSPORTE."
+4,5,0,0,ADMINISTRACION GENERAL DE INFRAESRUCTURAS
+4,5,9,0,OTRAS INFRAESTRUCTURAS
+4,6,2,0,INVESTIGACIÓN Y ESTUDIOS RELACIONADOS CON LOS SERV. PÚBLIC.
+4,9,1,0,SOCIEDAD DE LA INFORMACION
+4,9,2,0,GESTIÓN DEL CONOCIMIENTO.
+4,9,3,0,OFICINAS DE DEFENSA AL CONSUMIDOR.
+9,1,2,0,ORGANOS DE GOBIERNO
+9,2,0,0,ADMINISTRACION GENERAL
+9,2,2,0,COORDINACIÓN Y ORGANIZACIÓN INSTITUCIONAL DE ENTID. LOCALES
+9,2,3,0,INFORMACIÓN BÁSICA Y ESTADÍSTICA.
+9,2,4,0,PARTICIPACIÓN CIUDADANA
+9,2,5,0,ATENCIÓN A LOS CIUDADANOS
+9,2,6,0,COMUNICACIONES INTERNAS.
+9,2,9,0,IMPREVISTOS Y FUNCIONES NO CLASIFICADAS
+9,3,1,0,POLITICA ECONOMICA Y FISCAL
+9,3,2,0,GESTION DEL SISTEMA TRIBUTARIO
+9,3,3,0,GESTIÓN DEL PATRIMONIO.
+9,3,4,0,GESTIÓN DE LA DEUDA Y DE LA TESORERÍA.
