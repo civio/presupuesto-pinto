@@ -13,10 +13,16 @@
 }
 
 // Header
-.main-entity-logo{
-  visibility: hidden;
-  height: 50px;
-  background: white;
+header{
+  background: url(../assets/background-header.png) repeat-x 0 top transparent;
+
+  > .container{
+    background: url(../assets/background-heading.png) no-repeat center top transparent;
+  }
+}
+
+.navbar-brand > a{
+  color: white;
 }
 
 .navbar-default .navbar-nav{
@@ -26,6 +32,15 @@
 
   > li > a{
     text-transform: uppercase;
+    font-weight: $font-weight-400;
+
+    &:hover{
+      color: $dvmi-navbar-color;
+    }
+  }
+
+  > li.active > a{
+    font-weight: $font-weight-600;
   }
 }
 
@@ -54,28 +69,46 @@
 
   a{
     color: $brand-primary;
-    //font-weight: $font-weight-300;
 
     &:hover{
       color: $text-color;
     }
   }
-
-  /*
-  [class*="icon-"]:before{
-    float: none;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  */
 }
 
 // Home
 .home-content .options{
   background: $brand-secondary;
 
-  .option > div .icon{
-    color: $brand-primary;
+  .option > div{
+
+    .icon{
+      color: $brand-terciary;
+    }
+
+    .option-title:hover h3{
+      color: $text-color;
+    }
+
+    .btn{
+      font-size: 1.125em;
+      font-weight: $font-weight-300;
+      @include transition( background-color 0.3s ease-out );
+
+      &:before{
+        content: "";
+        display: block;
+        width: 19px;
+        height: 19px;
+        margin-top: 1px;
+        background: url(/static/assets/plus-icon.png) no-repeat 0 0 transparent;
+      }
+
+      &:hover{
+        background-color: darken( $brand-primary, 10% );
+        border-color: darken( $brand-primary, 10% );
+      }
+    }
   }
 }
 
@@ -121,9 +154,14 @@
 }
 
 // Glossary
-.form-search-glossary .btn-default{
-  background: $brand-primary;
+.form-search-glossary .btn-primary{
+  background-color: $brand-primary;
   border-color: $brand-primary;
+
+  &:hover{
+    background-color: mix( $brand-primary, white, 75% );
+    border-color: mix( $brand-primary, white, 75% );
+  }
 }
 .glossary-terms h3, 
 .glossary-terms h4{
@@ -132,6 +170,10 @@
   &:before{
     color: $brand-primary;
   }
+}
+
+.form-search-glossary .form-control{
+  border-color: $brand-primary;
 }
 
 // Search
@@ -149,4 +191,15 @@
       color: white;
     }
   }
+}
+
+// Search Icon
+.form-search-glossary .btn-default:before,
+.form-search .form-inline .btn:before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  background: url(/static/assets/search-icon.png) no-repeat 0 0 transparent;
 }
