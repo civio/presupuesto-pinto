@@ -10,7 +10,7 @@ $gray-light:            lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:          lighten($gray-base, 93.5%) !default; // #eee
 $gray-lightest:         lighten($gray-base, 96%) !default;
 
-$brand-primary:         #176486;
+$brand-primary:         #00486b;
 $brand-secondary:       #F7F7F7;
 $brand-terciary:        #C5C5C5;
 
@@ -62,8 +62,8 @@ $container-large-desktop:    (1080px + $grid-gutter-width);
 // Main Entity Logo
 // -------------
 
-$main-entity-logo-width:   89px;
-$main-entity-logo-height:  94px;
+$main-entity-logo-width:   90px;
+$main-entity-logo-height:  95px;
 
 
 // Navbar
@@ -112,7 +112,7 @@ $tooltip-opacity:             1;
 // --------------
 
 $footer-color:  white;
-$footer-bg:     darken( $brand-primary, 10% );
+$footer-bg:     $brand-primary;
 
 
 // Buttons
