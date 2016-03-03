@@ -10109,6 +10109,10 @@ body.widget .widget-title {
       color: #00486b; }
 body.widget .page-title {
   margin: 20px 0; }
+body.widget .tab-title {
+  text-align: center; }
+  body.widget .tab-title h3 {
+    display: none; }
 body.widget .history-back {
   display: none;
   position: absolute;
