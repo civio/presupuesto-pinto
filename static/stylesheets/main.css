@@ -10112,7 +10112,9 @@ body.widget .page-title {
 body.widget .tab-title {
   text-align: center; }
   body.widget .tab-title h3 {
-    display: none; }
+    display: none;
+    font-size: 1.5em;
+    color: #414141; }
 body.widget .history-back {
   display: none;
   position: absolute;
