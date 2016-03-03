@@ -8,14 +8,28 @@ MAIN_ENTITY_NAME = 'Pinto'
 BUDGET_LOADER = 'PintoBudgetLoader'
 PAYMENTS_LOADER = 'PintoPaymentsLoader'
 
-FEATURED_PROGRAMMES = ['3340', '4910', '9120']
+FEATURED_PROGRAMMES = ['9240', '4910', '4930']
 
-OVERVIEW_INCOME_NODES = [['11', '113'], '13', '42', '45', '30', '34', '39']
-OVERVIEW_EXPENSE_NODES = ['23', '92', '13', '16', '15', '01', '33', '32', '43', '44', '91', '93', '17']
+OVERVIEW_INCOME_NODES = [
+                          {
+                            'nodes': [['11', '113']],
+                            'label': 'Sobre bienes inmuebles de naturaleza urbana'
+                          },
+                          '13', '42', '45',
+                          {
+                            'nodes': [['11', '115']],
+                            'label': 'Impuesto sobre vehículos de tracción mecánica'
+                          },
+                          {
+                            'nodes': [['11', '116']],
+                            'label': 'Impuesto sobre incremento del valor de los terrenos de naturaleza urbana'
+                          },
+                        ]
+OVERVIEW_EXPENSE_NODES = ['45', '13', '92', '32', '23', '34', '33', '17']
 
 # How aggresive should the Sankey diagram reorder the nodes. Default: 0.79 (Optional)
 # Note: 0.5 usually leaves nodes ordered as defined. 0.95 sorts by size (decreasing).
-# OVERVIEW_RELAX_FACTOR = 0.5
+OVERVIEW_RELAX_FACTOR = 0.5
 
 # Show Payments section in menu & home options. Default: False.
 SHOW_PAYMENTS           = False
@@ -37,7 +51,7 @@ SHOW_INSTITUTIONAL_TAB  = False
 #SHOW_ACTUAL = True
 
 # Include financial income/expenditures in overview and global policy breakdowns. Default: False.
-INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = True
+INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = False
 
 # Search in entity names. Default: True.
 SEARCH_ENTITIES = False
