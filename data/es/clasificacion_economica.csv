@@ -522,7 +522,7 @@ G,9,4,0,Devolución de depósitos
 G,9,4,1,Devolución de fianzas
 #
 # Conceptos específicos de Pinto
-G,4,8,0,TRANSFERENCIAS GRUPOS MPALES
-G,4,8,9,PROGRAMAS DEPORTIVOS Y ACTIVIDADES
-G,4,9,0,AYUDAS Y PROGRAMAS DE COOPERACION AL DESARROLLO
-I,5,2,0,INTERESES EN CUENTAS CORRIENTES
+G,4,8,0,A familias e instituciones sin fines de lucro
+G,4,8,9,A familias e instituciones sin fines de lucro
+G,4,9,0,Al exterior
+I,5,2,0,Intereses en cuentas corrientes
