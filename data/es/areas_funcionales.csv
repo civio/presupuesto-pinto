@@ -57,10 +57,10 @@
 1,7,2,0,Protección y mejora del medio ambiente
 2,3,0,0,Administración general de servicios sociales
 2,3,1,0,Acción social
-2,3,2,0,Promoción social
-2,3,3,0,Asistencia a personas dependientes
 2,3,1,1,Administracion general de serv.sociales
 2,3,1,3,Participación ciudadana
+2,3,2,0,Promoción social
+2,3,3,0,Asistencia a personas dependientes
 2,4,1,0,Fomento del empleo
 3,1,3,0,Acciones públicas relativas a la salud
 3,2,0,0,Administración general de educación
@@ -72,7 +72,6 @@
 3,2,0,7,Administración general de educación
 3,2,1,0,Educación preescolar y primaria
 3,2,3,0,Promoción educativa
-3,2,4,0,Servicios complementarios de educación
 3,3,0,0,Administración general de cultura
 3,3,2,0,Bibliotecas y archivos
 3,3,3,0,Museos y artes plásticas
@@ -102,7 +101,6 @@
 9,2,0,0,Administración general
 9,2,2,0,Coordinación y organización institucional de entidades locales
 9,2,3,0,Información básica y estadística
-9,2,4,0,Participación ciudadana
 9,2,5,0,Atención a los ciudadanos
 9,2,6,0,Comunicaciones internas
 9,2,9,0,Imprevistos y funciones no clasificadas

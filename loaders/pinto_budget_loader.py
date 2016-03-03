@@ -17,7 +17,13 @@ class PintoBudgetLoader(SimpleBudgetLoader):
         # mapping to be constant over time, we are forced to amend budget data prior to 2015.
         # See https://github.com/dcabo/presupuestos-aragon/wiki/La-clasificaci%C3%B3n-funcional-en-las-Entidades-Locales
         programme_mapping = {
-            # '1340': '1350'
+            '3240': '3204',
+            '3201': '3200',
+            '3202': '3200',
+            '3203': '3200',
+            '3205': '3200',
+            '3207': '3200',
+            '9240': '2313',
         }
 
         is_expense = (filename.find('gastos.csv')!=-1)
