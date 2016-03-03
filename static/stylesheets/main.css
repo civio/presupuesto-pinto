@@ -1980,8 +1980,6 @@ disabled look for disabled choices in the results dropdown
  */
 table.dataTable {
   clear: both;
-  margin-top: 6px !important;
-  margin-bottom: 6px !important;
   max-width: none !important; }
 
 table.dataTable td,
@@ -6850,7 +6848,7 @@ button.list-group-item-danger {
   margin-bottom: 0;
   line-height: 1.3; }
 
-.panel, .panel-downloads, .home-content .options .option > div, .budget-intro .budget-step, .policies-graph, .tax-receipt-content .form-user-incomings, .tax-receipt-content #tax-amount {
+.panel, .panel-downloads, .home-content .options .option > div, .budget-intro .budget-step, .policies-chart, .tax-receipt-content .form-user-incomings, .tax-receipt-content #tax-amount {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
@@ -6893,48 +6891,48 @@ button.list-group-item-danger {
   border-bottom-right-radius: -1;
   border-bottom-left-radius: -1; }
 
-.panel > .list-group, .panel-downloads > .list-group, .home-content .options .option > div > .list-group, .budget-intro .budget-step > .list-group, .policies-graph > .list-group, .tax-receipt-content .form-user-incomings > .list-group, .tax-receipt-content #tax-amount > .list-group,
+.panel > .list-group, .panel-downloads > .list-group, .home-content .options .option > div > .list-group, .budget-intro .budget-step > .list-group, .policies-chart > .list-group, .tax-receipt-content .form-user-incomings > .list-group, .tax-receipt-content #tax-amount > .list-group,
 .panel > .panel-collapse > .list-group,
 .panel-downloads > .panel-collapse > .list-group,
 .home-content .options .option > div > .panel-collapse > .list-group,
 .budget-intro .budget-step > .panel-collapse > .list-group,
-.policies-graph > .panel-collapse > .list-group,
+.policies-chart > .panel-collapse > .list-group,
 .tax-receipt-content .form-user-incomings > .panel-collapse > .list-group,
 .tax-receipt-content #tax-amount > .panel-collapse > .list-group {
   margin-bottom: 0; }
-  .panel > .list-group .list-group-item, .panel-downloads > .list-group .list-group-item, .home-content .options .option > div > .list-group .list-group-item, .budget-intro .budget-step > .list-group .list-group-item, .policies-graph > .list-group .list-group-item, .tax-receipt-content .form-user-incomings > .list-group .list-group-item, .tax-receipt-content #tax-amount > .list-group .list-group-item,
+  .panel > .list-group .list-group-item, .panel-downloads > .list-group .list-group-item, .home-content .options .option > div > .list-group .list-group-item, .budget-intro .budget-step > .list-group .list-group-item, .policies-chart > .list-group .list-group-item, .tax-receipt-content .form-user-incomings > .list-group .list-group-item, .tax-receipt-content #tax-amount > .list-group .list-group-item,
   .panel > .panel-collapse > .list-group .list-group-item,
   .panel-downloads > .panel-collapse > .list-group .list-group-item,
   .home-content .options .option > div > .panel-collapse > .list-group .list-group-item,
   .budget-intro .budget-step > .panel-collapse > .list-group .list-group-item,
-  .policies-graph > .panel-collapse > .list-group .list-group-item,
+  .policies-chart > .panel-collapse > .list-group .list-group-item,
   .tax-receipt-content .form-user-incomings > .panel-collapse > .list-group .list-group-item,
   .tax-receipt-content #tax-amount > .panel-collapse > .list-group .list-group-item {
     border-width: 1px 0;
     border-radius: 0; }
-  .panel > .list-group:first-child .list-group-item:first-child, .panel-downloads > .list-group:first-child .list-group-item:first-child, .home-content .options .option > div > .list-group:first-child .list-group-item:first-child, .budget-intro .budget-step > .list-group:first-child .list-group-item:first-child, .policies-graph > .list-group:first-child .list-group-item:first-child, .tax-receipt-content .form-user-incomings > .list-group:first-child .list-group-item:first-child, .tax-receipt-content #tax-amount > .list-group:first-child .list-group-item:first-child,
+  .panel > .list-group:first-child .list-group-item:first-child, .panel-downloads > .list-group:first-child .list-group-item:first-child, .home-content .options .option > div > .list-group:first-child .list-group-item:first-child, .budget-intro .budget-step > .list-group:first-child .list-group-item:first-child, .policies-chart > .list-group:first-child .list-group-item:first-child, .tax-receipt-content .form-user-incomings > .list-group:first-child .list-group-item:first-child, .tax-receipt-content #tax-amount > .list-group:first-child .list-group-item:first-child,
   .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child,
   .panel-downloads > .panel-collapse > .list-group:first-child .list-group-item:first-child,
   .home-content .options .option > div > .panel-collapse > .list-group:first-child .list-group-item:first-child,
   .budget-intro .budget-step > .panel-collapse > .list-group:first-child .list-group-item:first-child,
-  .policies-graph > .panel-collapse > .list-group:first-child .list-group-item:first-child,
+  .policies-chart > .panel-collapse > .list-group:first-child .list-group-item:first-child,
   .tax-receipt-content .form-user-incomings > .panel-collapse > .list-group:first-child .list-group-item:first-child,
   .tax-receipt-content #tax-amount > .panel-collapse > .list-group:first-child .list-group-item:first-child {
     border-top: 0;
     border-top-right-radius: -1;
     border-top-left-radius: -1; }
-  .panel > .list-group:last-child .list-group-item:last-child, .panel-downloads > .list-group:last-child .list-group-item:last-child, .home-content .options .option > div > .list-group:last-child .list-group-item:last-child, .budget-intro .budget-step > .list-group:last-child .list-group-item:last-child, .policies-graph > .list-group:last-child .list-group-item:last-child, .tax-receipt-content .form-user-incomings > .list-group:last-child .list-group-item:last-child, .tax-receipt-content #tax-amount > .list-group:last-child .list-group-item:last-child,
+  .panel > .list-group:last-child .list-group-item:last-child, .panel-downloads > .list-group:last-child .list-group-item:last-child, .home-content .options .option > div > .list-group:last-child .list-group-item:last-child, .budget-intro .budget-step > .list-group:last-child .list-group-item:last-child, .policies-chart > .list-group:last-child .list-group-item:last-child, .tax-receipt-content .form-user-incomings > .list-group:last-child .list-group-item:last-child, .tax-receipt-content #tax-amount > .list-group:last-child .list-group-item:last-child,
   .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child,
   .panel-downloads > .panel-collapse > .list-group:last-child .list-group-item:last-child,
   .home-content .options .option > div > .panel-collapse > .list-group:last-child .list-group-item:last-child,
   .budget-intro .budget-step > .panel-collapse > .list-group:last-child .list-group-item:last-child,
-  .policies-graph > .panel-collapse > .list-group:last-child .list-group-item:last-child,
+  .policies-chart > .panel-collapse > .list-group:last-child .list-group-item:last-child,
   .tax-receipt-content .form-user-incomings > .panel-collapse > .list-group:last-child .list-group-item:last-child,
   .tax-receipt-content #tax-amount > .panel-collapse > .list-group:last-child .list-group-item:last-child {
     border-bottom: 0;
     border-bottom-right-radius: -1;
     border-bottom-left-radius: -1; }
-.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .panel-downloads > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .home-content .options .option > div > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .budget-intro .budget-step > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .policies-graph > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .panel-downloads > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .home-content .options .option > div > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .budget-intro .budget-step > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .policies-chart > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child, .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
@@ -6944,622 +6942,622 @@ button.list-group-item-danger {
 .list-group + .panel-footer {
   border-top-width: 0; }
 
-.panel > .table, .panel-downloads > .table, .home-content .options .option > div > .table, .budget-intro .budget-step > .table, .policies-graph > .table, .tax-receipt-content .form-user-incomings > .table, .tax-receipt-content #tax-amount > .table,
+.panel > .table, .panel-downloads > .table, .home-content .options .option > div > .table, .budget-intro .budget-step > .table, .policies-chart > .table, .tax-receipt-content .form-user-incomings > .table, .tax-receipt-content #tax-amount > .table,
 .panel > .table-responsive > .table,
 .panel-downloads > .table-responsive > .table,
 .home-content .options .option > div > .table-responsive > .table,
 .budget-intro .budget-step > .table-responsive > .table,
-.policies-graph > .table-responsive > .table,
+.policies-chart > .table-responsive > .table,
 .tax-receipt-content .form-user-incomings > .table-responsive > .table,
 .tax-receipt-content #tax-amount > .table-responsive > .table,
 .panel > .panel-collapse > .table,
 .panel-downloads > .panel-collapse > .table,
 .home-content .options .option > div > .panel-collapse > .table,
 .budget-intro .budget-step > .panel-collapse > .table,
-.policies-graph > .panel-collapse > .table,
+.policies-chart > .panel-collapse > .table,
 .tax-receipt-content .form-user-incomings > .panel-collapse > .table,
 .tax-receipt-content #tax-amount > .panel-collapse > .table {
   margin-bottom: 0; }
-  .panel > .table caption, .panel-downloads > .table caption, .home-content .options .option > div > .table caption, .budget-intro .budget-step > .table caption, .policies-graph > .table caption, .tax-receipt-content .form-user-incomings > .table caption, .tax-receipt-content #tax-amount > .table caption,
+  .panel > .table caption, .panel-downloads > .table caption, .home-content .options .option > div > .table caption, .budget-intro .budget-step > .table caption, .policies-chart > .table caption, .tax-receipt-content .form-user-incomings > .table caption, .tax-receipt-content #tax-amount > .table caption,
   .panel > .table-responsive > .table caption,
   .panel-downloads > .table-responsive > .table caption,
   .home-content .options .option > div > .table-responsive > .table caption,
   .budget-intro .budget-step > .table-responsive > .table caption,
-  .policies-graph > .table-responsive > .table caption,
+  .policies-chart > .table-responsive > .table caption,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table caption,
   .tax-receipt-content #tax-amount > .table-responsive > .table caption,
   .panel > .panel-collapse > .table caption,
   .panel-downloads > .panel-collapse > .table caption,
   .home-content .options .option > div > .panel-collapse > .table caption,
   .budget-intro .budget-step > .panel-collapse > .table caption,
-  .policies-graph > .panel-collapse > .table caption,
+  .policies-chart > .panel-collapse > .table caption,
   .tax-receipt-content .form-user-incomings > .panel-collapse > .table caption,
   .tax-receipt-content #tax-amount > .panel-collapse > .table caption {
     padding-left: 15px;
     padding-right: 15px; }
-.panel > .table:first-child, .panel-downloads > .table:first-child, .home-content .options .option > div > .table:first-child, .budget-intro .budget-step > .table:first-child, .policies-graph > .table:first-child, .tax-receipt-content .form-user-incomings > .table:first-child, .tax-receipt-content #tax-amount > .table:first-child,
+.panel > .table:first-child, .panel-downloads > .table:first-child, .home-content .options .option > div > .table:first-child, .budget-intro .budget-step > .table:first-child, .policies-chart > .table:first-child, .tax-receipt-content .form-user-incomings > .table:first-child, .tax-receipt-content #tax-amount > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child,
 .panel-downloads > .table-responsive:first-child > .table:first-child,
 .home-content .options .option > div > .table-responsive:first-child > .table:first-child,
 .budget-intro .budget-step > .table-responsive:first-child > .table:first-child,
-.policies-graph > .table-responsive:first-child > .table:first-child,
+.policies-chart > .table-responsive:first-child > .table:first-child,
 .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child,
 .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child {
   border-top-right-radius: -1;
   border-top-left-radius: -1; }
-  .panel > .table:first-child > thead:first-child > tr:first-child, .panel-downloads > .table:first-child > thead:first-child > tr:first-child, .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child, .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child, .policies-graph > .table:first-child > thead:first-child > tr:first-child, .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child, .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child,
+  .panel > .table:first-child > thead:first-child > tr:first-child, .panel-downloads > .table:first-child > thead:first-child > tr:first-child, .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child, .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child, .policies-chart > .table:first-child > thead:first-child > tr:first-child, .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child, .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child,
   .panel > .table:first-child > tbody:first-child > tr:first-child,
   .panel-downloads > .table:first-child > tbody:first-child > tr:first-child,
   .home-content .options .option > div > .table:first-child > tbody:first-child > tr:first-child,
   .budget-intro .budget-step > .table:first-child > tbody:first-child > tr:first-child,
-  .policies-graph > .table:first-child > tbody:first-child > tr:first-child,
+  .policies-chart > .table:first-child > tbody:first-child > tr:first-child,
   .tax-receipt-content .form-user-incomings > .table:first-child > tbody:first-child > tr:first-child,
   .tax-receipt-content #tax-amount > .table:first-child > tbody:first-child > tr:first-child,
   .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
   .panel-downloads > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
   .home-content .options .option > div > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
   .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
-  .policies-graph > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+  .policies-chart > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
   .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
   .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
   .panel-downloads > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
   .home-content .options .option > div > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
   .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
-  .policies-graph > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
+  .policies-chart > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
   .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
     border-top-left-radius: -1;
     border-top-right-radius: -1; }
-    .panel > .table:first-child > thead:first-child > tr:first-child td:first-child, .panel-downloads > .table:first-child > thead:first-child > tr:first-child td:first-child, .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child td:first-child, .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child td:first-child, .policies-graph > .table:first-child > thead:first-child > tr:first-child td:first-child, .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child td:first-child, .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    .panel > .table:first-child > thead:first-child > tr:first-child td:first-child, .panel-downloads > .table:first-child > thead:first-child > tr:first-child td:first-child, .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child td:first-child, .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child td:first-child, .policies-chart > .table:first-child > thead:first-child > tr:first-child td:first-child, .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child td:first-child, .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel-downloads > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child th:first-child,
-    .policies-graph > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    .policies-chart > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .panel-downloads > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .home-content .options .option > div > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .budget-intro .budget-step > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-    .policies-graph > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+    .policies-chart > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .tax-receipt-content .form-user-incomings > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .tax-receipt-content #tax-amount > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .panel-downloads > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .home-content .options .option > div > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .budget-intro .budget-step > .table:first-child > tbody:first-child > tr:first-child th:first-child,
-    .policies-graph > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+    .policies-chart > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .tax-receipt-content #tax-amount > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
       border-top-left-radius: -1; }
-    .panel > .table:first-child > thead:first-child > tr:first-child td:last-child, .panel-downloads > .table:first-child > thead:first-child > tr:first-child td:last-child, .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child td:last-child, .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child td:last-child, .policies-graph > .table:first-child > thead:first-child > tr:first-child td:last-child, .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child td:last-child, .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    .panel > .table:first-child > thead:first-child > tr:first-child td:last-child, .panel-downloads > .table:first-child > thead:first-child > tr:first-child td:last-child, .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child td:last-child, .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child td:last-child, .policies-chart > .table:first-child > thead:first-child > tr:first-child td:last-child, .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child td:last-child, .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel-downloads > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .home-content .options .option > div > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .budget-intro .budget-step > .table:first-child > thead:first-child > tr:first-child th:last-child,
-    .policies-graph > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    .policies-chart > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .tax-receipt-content #tax-amount > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .panel-downloads > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .home-content .options .option > div > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .budget-intro .budget-step > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-    .policies-graph > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+    .policies-chart > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .tax-receipt-content .form-user-incomings > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .tax-receipt-content #tax-amount > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .panel-downloads > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .home-content .options .option > div > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .budget-intro .budget-step > .table:first-child > tbody:first-child > tr:first-child th:last-child,
-    .policies-graph > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+    .policies-chart > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .tax-receipt-content #tax-amount > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .panel-downloads > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .home-content .options .option > div > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .budget-intro .budget-step > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
-    .policies-graph > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+    .policies-chart > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
       border-top-right-radius: -1; }
-.panel > .table:last-child, .panel-downloads > .table:last-child, .home-content .options .option > div > .table:last-child, .budget-intro .budget-step > .table:last-child, .policies-graph > .table:last-child, .tax-receipt-content .form-user-incomings > .table:last-child, .tax-receipt-content #tax-amount > .table:last-child,
+.panel > .table:last-child, .panel-downloads > .table:last-child, .home-content .options .option > div > .table:last-child, .budget-intro .budget-step > .table:last-child, .policies-chart > .table:last-child, .tax-receipt-content .form-user-incomings > .table:last-child, .tax-receipt-content #tax-amount > .table:last-child,
 .panel > .table-responsive:last-child > .table:last-child,
 .panel-downloads > .table-responsive:last-child > .table:last-child,
 .home-content .options .option > div > .table-responsive:last-child > .table:last-child,
 .budget-intro .budget-step > .table-responsive:last-child > .table:last-child,
-.policies-graph > .table-responsive:last-child > .table:last-child,
+.policies-chart > .table-responsive:last-child > .table:last-child,
 .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child,
 .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child {
   border-bottom-right-radius: -1;
   border-bottom-left-radius: -1; }
-  .panel > .table:last-child > tbody:last-child > tr:last-child, .panel-downloads > .table:last-child > tbody:last-child > tr:last-child, .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child, .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child, .policies-graph > .table:last-child > tbody:last-child > tr:last-child, .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child, .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child,
+  .panel > .table:last-child > tbody:last-child > tr:last-child, .panel-downloads > .table:last-child > tbody:last-child > tr:last-child, .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child, .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child, .policies-chart > .table:last-child > tbody:last-child > tr:last-child, .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child, .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child,
   .panel > .table:last-child > tfoot:last-child > tr:last-child,
   .panel-downloads > .table:last-child > tfoot:last-child > tr:last-child,
   .home-content .options .option > div > .table:last-child > tfoot:last-child > tr:last-child,
   .budget-intro .budget-step > .table:last-child > tfoot:last-child > tr:last-child,
-  .policies-graph > .table:last-child > tfoot:last-child > tr:last-child,
+  .policies-chart > .table:last-child > tfoot:last-child > tr:last-child,
   .tax-receipt-content .form-user-incomings > .table:last-child > tfoot:last-child > tr:last-child,
   .tax-receipt-content #tax-amount > .table:last-child > tfoot:last-child > tr:last-child,
   .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
   .panel-downloads > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
   .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
   .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
-  .policies-graph > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+  .policies-chart > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
   .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
   .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
   .panel-downloads > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
   .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
   .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
-  .policies-graph > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
+  .policies-chart > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
   .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
     border-bottom-left-radius: -1;
     border-bottom-right-radius: -1; }
-    .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, .panel-downloads > .table:last-child > tbody:last-child > tr:last-child td:first-child, .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child td:first-child, .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child td:first-child, .policies-graph > .table:last-child > tbody:last-child > tr:last-child td:first-child, .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child td:first-child, .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, .panel-downloads > .table:last-child > tbody:last-child > tr:last-child td:first-child, .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child td:first-child, .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child td:first-child, .policies-chart > .table:last-child > tbody:last-child > tr:last-child td:first-child, .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child td:first-child, .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel-downloads > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-    .policies-graph > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    .policies-chart > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .panel-downloads > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .home-content .options .option > div > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .budget-intro .budget-step > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-    .policies-graph > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+    .policies-chart > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .tax-receipt-content .form-user-incomings > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .tax-receipt-content #tax-amount > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .panel-downloads > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .home-content .options .option > div > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .budget-intro .budget-step > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
-    .policies-graph > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+    .policies-chart > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .tax-receipt-content #tax-amount > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
       border-bottom-left-radius: -1; }
-    .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, .panel-downloads > .table:last-child > tbody:last-child > tr:last-child td:last-child, .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child td:last-child, .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child td:last-child, .policies-graph > .table:last-child > tbody:last-child > tr:last-child td:last-child, .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child td:last-child, .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, .panel-downloads > .table:last-child > tbody:last-child > tr:last-child td:last-child, .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child td:last-child, .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child td:last-child, .policies-chart > .table:last-child > tbody:last-child > tr:last-child td:last-child, .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child td:last-child, .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel-downloads > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .home-content .options .option > div > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .budget-intro .budget-step > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-    .policies-graph > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    .policies-chart > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .tax-receipt-content #tax-amount > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .panel-downloads > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .home-content .options .option > div > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .budget-intro .budget-step > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-    .policies-graph > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+    .policies-chart > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .tax-receipt-content .form-user-incomings > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .tax-receipt-content #tax-amount > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .panel-downloads > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .home-content .options .option > div > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .budget-intro .budget-step > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
-    .policies-graph > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+    .policies-chart > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .tax-receipt-content #tax-amount > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .panel-downloads > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .home-content .options .option > div > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .budget-intro .budget-step > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
-    .policies-graph > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+    .policies-chart > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .tax-receipt-content .form-user-incomings > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .tax-receipt-content #tax-amount > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
       border-bottom-right-radius: -1; }
-.panel > .panel-body + .table, .panel-downloads > .panel-body + .table, .home-content .options .option > div > .panel-body + .table, .budget-intro .budget-step > .panel-body + .table, .policies-graph > .panel-body + .table, .tax-receipt-content .form-user-incomings > .panel-body + .table, .tax-receipt-content #tax-amount > .panel-body + .table,
+.panel > .panel-body + .table, .panel-downloads > .panel-body + .table, .home-content .options .option > div > .panel-body + .table, .budget-intro .budget-step > .panel-body + .table, .policies-chart > .panel-body + .table, .tax-receipt-content .form-user-incomings > .panel-body + .table, .tax-receipt-content #tax-amount > .panel-body + .table,
 .panel > .panel-body + .table-responsive,
 .panel-downloads > .panel-body + .table-responsive,
 .home-content .options .option > div > .panel-body + .table-responsive,
 .budget-intro .budget-step > .panel-body + .table-responsive,
-.policies-graph > .panel-body + .table-responsive,
+.policies-chart > .panel-body + .table-responsive,
 .tax-receipt-content .form-user-incomings > .panel-body + .table-responsive,
 .tax-receipt-content #tax-amount > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel-downloads > .table + .panel-body,
 .home-content .options .option > div > .table + .panel-body,
 .budget-intro .budget-step > .table + .panel-body,
-.policies-graph > .table + .panel-body,
+.policies-chart > .table + .panel-body,
 .tax-receipt-content .form-user-incomings > .table + .panel-body,
 .tax-receipt-content #tax-amount > .table + .panel-body,
 .panel > .table-responsive + .panel-body,
 .panel-downloads > .table-responsive + .panel-body,
 .home-content .options .option > div > .table-responsive + .panel-body,
 .budget-intro .budget-step > .table-responsive + .panel-body,
-.policies-graph > .table-responsive + .panel-body,
+.policies-chart > .table-responsive + .panel-body,
 .tax-receipt-content .form-user-incomings > .table-responsive + .panel-body,
 .tax-receipt-content #tax-amount > .table-responsive + .panel-body {
   border-top: 1px solid #ddd; }
-.panel > .table > tbody:first-child > tr:first-child th, .panel-downloads > .table > tbody:first-child > tr:first-child th, .home-content .options .option > div > .table > tbody:first-child > tr:first-child th, .budget-intro .budget-step > .table > tbody:first-child > tr:first-child th, .policies-graph > .table > tbody:first-child > tr:first-child th, .tax-receipt-content .form-user-incomings > .table > tbody:first-child > tr:first-child th, .tax-receipt-content #tax-amount > .table > tbody:first-child > tr:first-child th,
+.panel > .table > tbody:first-child > tr:first-child th, .panel-downloads > .table > tbody:first-child > tr:first-child th, .home-content .options .option > div > .table > tbody:first-child > tr:first-child th, .budget-intro .budget-step > .table > tbody:first-child > tr:first-child th, .policies-chart > .table > tbody:first-child > tr:first-child th, .tax-receipt-content .form-user-incomings > .table > tbody:first-child > tr:first-child th, .tax-receipt-content #tax-amount > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td,
 .panel-downloads > .table > tbody:first-child > tr:first-child td,
 .home-content .options .option > div > .table > tbody:first-child > tr:first-child td,
 .budget-intro .budget-step > .table > tbody:first-child > tr:first-child td,
-.policies-graph > .table > tbody:first-child > tr:first-child td,
+.policies-chart > .table > tbody:first-child > tr:first-child td,
 .tax-receipt-content .form-user-incomings > .table > tbody:first-child > tr:first-child td,
 .tax-receipt-content #tax-amount > .table > tbody:first-child > tr:first-child td {
   border-top: 0; }
-.panel > .table-bordered, .panel-downloads > .table-bordered, .home-content .options .option > div > .table-bordered, .budget-intro .budget-step > .table-bordered, .policies-graph > .table-bordered, .tax-receipt-content .form-user-incomings > .table-bordered, .tax-receipt-content #tax-amount > .table-bordered,
+.panel > .table-bordered, .panel-downloads > .table-bordered, .home-content .options .option > div > .table-bordered, .budget-intro .budget-step > .table-bordered, .policies-chart > .table-bordered, .tax-receipt-content .form-user-incomings > .table-bordered, .tax-receipt-content #tax-amount > .table-bordered,
 .panel > .table-responsive > .table-bordered,
 .panel-downloads > .table-responsive > .table-bordered,
 .home-content .options .option > div > .table-responsive > .table-bordered,
 .budget-intro .budget-step > .table-responsive > .table-bordered,
-.policies-graph > .table-responsive > .table-bordered,
+.policies-chart > .table-responsive > .table-bordered,
 .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered,
 .tax-receipt-content #tax-amount > .table-responsive > .table-bordered {
   border: 0; }
-  .panel > .table-bordered > thead > tr > th:first-child, .panel-downloads > .table-bordered > thead > tr > th:first-child, .home-content .options .option > div > .table-bordered > thead > tr > th:first-child, .budget-intro .budget-step > .table-bordered > thead > tr > th:first-child, .policies-graph > .table-bordered > thead > tr > th:first-child, .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr > th:first-child, .tax-receipt-content #tax-amount > .table-bordered > thead > tr > th:first-child,
+  .panel > .table-bordered > thead > tr > th:first-child, .panel-downloads > .table-bordered > thead > tr > th:first-child, .home-content .options .option > div > .table-bordered > thead > tr > th:first-child, .budget-intro .budget-step > .table-bordered > thead > tr > th:first-child, .policies-chart > .table-bordered > thead > tr > th:first-child, .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr > th:first-child, .tax-receipt-content #tax-amount > .table-bordered > thead > tr > th:first-child,
   .panel > .table-bordered > thead > tr > td:first-child,
   .panel-downloads > .table-bordered > thead > tr > td:first-child,
   .home-content .options .option > div > .table-bordered > thead > tr > td:first-child,
   .budget-intro .budget-step > .table-bordered > thead > tr > td:first-child,
-  .policies-graph > .table-bordered > thead > tr > td:first-child,
+  .policies-chart > .table-bordered > thead > tr > td:first-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr > td:first-child,
   .tax-receipt-content #tax-amount > .table-bordered > thead > tr > td:first-child,
   .panel > .table-bordered > tbody > tr > th:first-child,
   .panel-downloads > .table-bordered > tbody > tr > th:first-child,
   .home-content .options .option > div > .table-bordered > tbody > tr > th:first-child,
   .budget-intro .budget-step > .table-bordered > tbody > tr > th:first-child,
-  .policies-graph > .table-bordered > tbody > tr > th:first-child,
+  .policies-chart > .table-bordered > tbody > tr > th:first-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr > th:first-child,
   .tax-receipt-content #tax-amount > .table-bordered > tbody > tr > th:first-child,
   .panel > .table-bordered > tbody > tr > td:first-child,
   .panel-downloads > .table-bordered > tbody > tr > td:first-child,
   .home-content .options .option > div > .table-bordered > tbody > tr > td:first-child,
   .budget-intro .budget-step > .table-bordered > tbody > tr > td:first-child,
-  .policies-graph > .table-bordered > tbody > tr > td:first-child,
+  .policies-chart > .table-bordered > tbody > tr > td:first-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr > td:first-child,
   .tax-receipt-content #tax-amount > .table-bordered > tbody > tr > td:first-child,
   .panel > .table-bordered > tfoot > tr > th:first-child,
   .panel-downloads > .table-bordered > tfoot > tr > th:first-child,
   .home-content .options .option > div > .table-bordered > tfoot > tr > th:first-child,
   .budget-intro .budget-step > .table-bordered > tfoot > tr > th:first-child,
-  .policies-graph > .table-bordered > tfoot > tr > th:first-child,
+  .policies-chart > .table-bordered > tfoot > tr > th:first-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tfoot > tr > th:first-child,
   .tax-receipt-content #tax-amount > .table-bordered > tfoot > tr > th:first-child,
   .panel > .table-bordered > tfoot > tr > td:first-child,
   .panel-downloads > .table-bordered > tfoot > tr > td:first-child,
   .home-content .options .option > div > .table-bordered > tfoot > tr > td:first-child,
   .budget-intro .budget-step > .table-bordered > tfoot > tr > td:first-child,
-  .policies-graph > .table-bordered > tfoot > tr > td:first-child,
+  .policies-chart > .table-bordered > tfoot > tr > td:first-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tfoot > tr > td:first-child,
   .tax-receipt-content #tax-amount > .table-bordered > tfoot > tr > td:first-child,
   .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
   .panel-downloads > .table-responsive > .table-bordered > thead > tr > th:first-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > thead > tr > th:first-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > thead > tr > th:first-child,
-  .policies-graph > .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .policies-chart > .table-responsive > .table-bordered > thead > tr > th:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > thead > tr > th:first-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > thead > tr > th:first-child,
   .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
   .panel-downloads > .table-responsive > .table-bordered > thead > tr > td:first-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > thead > tr > td:first-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > thead > tr > td:first-child,
-  .policies-graph > .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .policies-chart > .table-responsive > .table-bordered > thead > tr > td:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > thead > tr > td:first-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > thead > tr > td:first-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr > th:first-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr > th:first-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr > th:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr > th:first-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr > th:first-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
   .panel-downloads > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .policies-graph > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .policies-chart > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
   .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
   .panel-downloads > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
-  .policies-graph > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+  .policies-chart > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
     border-left: 0; }
-  .panel > .table-bordered > thead > tr > th:last-child, .panel-downloads > .table-bordered > thead > tr > th:last-child, .home-content .options .option > div > .table-bordered > thead > tr > th:last-child, .budget-intro .budget-step > .table-bordered > thead > tr > th:last-child, .policies-graph > .table-bordered > thead > tr > th:last-child, .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr > th:last-child, .tax-receipt-content #tax-amount > .table-bordered > thead > tr > th:last-child,
+  .panel > .table-bordered > thead > tr > th:last-child, .panel-downloads > .table-bordered > thead > tr > th:last-child, .home-content .options .option > div > .table-bordered > thead > tr > th:last-child, .budget-intro .budget-step > .table-bordered > thead > tr > th:last-child, .policies-chart > .table-bordered > thead > tr > th:last-child, .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr > th:last-child, .tax-receipt-content #tax-amount > .table-bordered > thead > tr > th:last-child,
   .panel > .table-bordered > thead > tr > td:last-child,
   .panel-downloads > .table-bordered > thead > tr > td:last-child,
   .home-content .options .option > div > .table-bordered > thead > tr > td:last-child,
   .budget-intro .budget-step > .table-bordered > thead > tr > td:last-child,
-  .policies-graph > .table-bordered > thead > tr > td:last-child,
+  .policies-chart > .table-bordered > thead > tr > td:last-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr > td:last-child,
   .tax-receipt-content #tax-amount > .table-bordered > thead > tr > td:last-child,
   .panel > .table-bordered > tbody > tr > th:last-child,
   .panel-downloads > .table-bordered > tbody > tr > th:last-child,
   .home-content .options .option > div > .table-bordered > tbody > tr > th:last-child,
   .budget-intro .budget-step > .table-bordered > tbody > tr > th:last-child,
-  .policies-graph > .table-bordered > tbody > tr > th:last-child,
+  .policies-chart > .table-bordered > tbody > tr > th:last-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr > th:last-child,
   .tax-receipt-content #tax-amount > .table-bordered > tbody > tr > th:last-child,
   .panel > .table-bordered > tbody > tr > td:last-child,
   .panel-downloads > .table-bordered > tbody > tr > td:last-child,
   .home-content .options .option > div > .table-bordered > tbody > tr > td:last-child,
   .budget-intro .budget-step > .table-bordered > tbody > tr > td:last-child,
-  .policies-graph > .table-bordered > tbody > tr > td:last-child,
+  .policies-chart > .table-bordered > tbody > tr > td:last-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr > td:last-child,
   .tax-receipt-content #tax-amount > .table-bordered > tbody > tr > td:last-child,
   .panel > .table-bordered > tfoot > tr > th:last-child,
   .panel-downloads > .table-bordered > tfoot > tr > th:last-child,
   .home-content .options .option > div > .table-bordered > tfoot > tr > th:last-child,
   .budget-intro .budget-step > .table-bordered > tfoot > tr > th:last-child,
-  .policies-graph > .table-bordered > tfoot > tr > th:last-child,
+  .policies-chart > .table-bordered > tfoot > tr > th:last-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tfoot > tr > th:last-child,
   .tax-receipt-content #tax-amount > .table-bordered > tfoot > tr > th:last-child,
   .panel > .table-bordered > tfoot > tr > td:last-child,
   .panel-downloads > .table-bordered > tfoot > tr > td:last-child,
   .home-content .options .option > div > .table-bordered > tfoot > tr > td:last-child,
   .budget-intro .budget-step > .table-bordered > tfoot > tr > td:last-child,
-  .policies-graph > .table-bordered > tfoot > tr > td:last-child,
+  .policies-chart > .table-bordered > tfoot > tr > td:last-child,
   .tax-receipt-content .form-user-incomings > .table-bordered > tfoot > tr > td:last-child,
   .tax-receipt-content #tax-amount > .table-bordered > tfoot > tr > td:last-child,
   .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
   .panel-downloads > .table-responsive > .table-bordered > thead > tr > th:last-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > thead > tr > th:last-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > thead > tr > th:last-child,
-  .policies-graph > .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .policies-chart > .table-responsive > .table-bordered > thead > tr > th:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > thead > tr > th:last-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > thead > tr > th:last-child,
   .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
   .panel-downloads > .table-responsive > .table-bordered > thead > tr > td:last-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > thead > tr > td:last-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > thead > tr > td:last-child,
-  .policies-graph > .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .policies-chart > .table-responsive > .table-bordered > thead > tr > td:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > thead > tr > td:last-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > thead > tr > td:last-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr > th:last-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr > th:last-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr > th:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr > th:last-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr > th:last-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
   .panel-downloads > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .policies-graph > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .policies-chart > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
   .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
   .panel-downloads > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
   .home-content .options .option > div > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
-  .policies-graph > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+  .policies-chart > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
     border-right: 0; }
-  .panel > .table-bordered > thead > tr:first-child > td, .panel-downloads > .table-bordered > thead > tr:first-child > td, .home-content .options .option > div > .table-bordered > thead > tr:first-child > td, .budget-intro .budget-step > .table-bordered > thead > tr:first-child > td, .policies-graph > .table-bordered > thead > tr:first-child > td, .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr:first-child > td, .tax-receipt-content #tax-amount > .table-bordered > thead > tr:first-child > td,
+  .panel > .table-bordered > thead > tr:first-child > td, .panel-downloads > .table-bordered > thead > tr:first-child > td, .home-content .options .option > div > .table-bordered > thead > tr:first-child > td, .budget-intro .budget-step > .table-bordered > thead > tr:first-child > td, .policies-chart > .table-bordered > thead > tr:first-child > td, .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr:first-child > td, .tax-receipt-content #tax-amount > .table-bordered > thead > tr:first-child > td,
   .panel > .table-bordered > thead > tr:first-child > th,
   .panel-downloads > .table-bordered > thead > tr:first-child > th,
   .home-content .options .option > div > .table-bordered > thead > tr:first-child > th,
   .budget-intro .budget-step > .table-bordered > thead > tr:first-child > th,
-  .policies-graph > .table-bordered > thead > tr:first-child > th,
+  .policies-chart > .table-bordered > thead > tr:first-child > th,
   .tax-receipt-content .form-user-incomings > .table-bordered > thead > tr:first-child > th,
   .tax-receipt-content #tax-amount > .table-bordered > thead > tr:first-child > th,
   .panel > .table-bordered > tbody > tr:first-child > td,
   .panel-downloads > .table-bordered > tbody > tr:first-child > td,
   .home-content .options .option > div > .table-bordered > tbody > tr:first-child > td,
   .budget-intro .budget-step > .table-bordered > tbody > tr:first-child > td,
-  .policies-graph > .table-bordered > tbody > tr:first-child > td,
+  .policies-chart > .table-bordered > tbody > tr:first-child > td,
   .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr:first-child > td,
   .tax-receipt-content #tax-amount > .table-bordered > tbody > tr:first-child > td,
   .panel > .table-bordered > tbody > tr:first-child > th,
   .panel-downloads > .table-bordered > tbody > tr:first-child > th,
   .home-content .options .option > div > .table-bordered > tbody > tr:first-child > th,
   .budget-intro .budget-step > .table-bordered > tbody > tr:first-child > th,
-  .policies-graph > .table-bordered > tbody > tr:first-child > th,
+  .policies-chart > .table-bordered > tbody > tr:first-child > th,
   .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr:first-child > th,
   .tax-receipt-content #tax-amount > .table-bordered > tbody > tr:first-child > th,
   .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
   .panel-downloads > .table-responsive > .table-bordered > thead > tr:first-child > td,
   .home-content .options .option > div > .table-responsive > .table-bordered > thead > tr:first-child > td,
   .budget-intro .budget-step > .table-responsive > .table-bordered > thead > tr:first-child > td,
-  .policies-graph > .table-responsive > .table-bordered > thead > tr:first-child > td,
+  .policies-chart > .table-responsive > .table-bordered > thead > tr:first-child > td,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > thead > tr:first-child > td,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > thead > tr:first-child > td,
   .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
   .panel-downloads > .table-responsive > .table-bordered > thead > tr:first-child > th,
   .home-content .options .option > div > .table-responsive > .table-bordered > thead > tr:first-child > th,
   .budget-intro .budget-step > .table-responsive > .table-bordered > thead > tr:first-child > th,
-  .policies-graph > .table-responsive > .table-bordered > thead > tr:first-child > th,
+  .policies-chart > .table-responsive > .table-bordered > thead > tr:first-child > th,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > thead > tr:first-child > th,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > thead > tr:first-child > th,
   .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr:first-child > td,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr:first-child > td,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr:first-child > td,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr:first-child > td,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr:first-child > td,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr:first-child > td,
   .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr:first-child > th,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr:first-child > th,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr:first-child > th,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr:first-child > th,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr:first-child > th,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr:first-child > th,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr:first-child > th {
     border-bottom: 0; }
-  .panel > .table-bordered > tbody > tr:last-child > td, .panel-downloads > .table-bordered > tbody > tr:last-child > td, .home-content .options .option > div > .table-bordered > tbody > tr:last-child > td, .budget-intro .budget-step > .table-bordered > tbody > tr:last-child > td, .policies-graph > .table-bordered > tbody > tr:last-child > td, .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr:last-child > td, .tax-receipt-content #tax-amount > .table-bordered > tbody > tr:last-child > td,
+  .panel > .table-bordered > tbody > tr:last-child > td, .panel-downloads > .table-bordered > tbody > tr:last-child > td, .home-content .options .option > div > .table-bordered > tbody > tr:last-child > td, .budget-intro .budget-step > .table-bordered > tbody > tr:last-child > td, .policies-chart > .table-bordered > tbody > tr:last-child > td, .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr:last-child > td, .tax-receipt-content #tax-amount > .table-bordered > tbody > tr:last-child > td,
   .panel > .table-bordered > tbody > tr:last-child > th,
   .panel-downloads > .table-bordered > tbody > tr:last-child > th,
   .home-content .options .option > div > .table-bordered > tbody > tr:last-child > th,
   .budget-intro .budget-step > .table-bordered > tbody > tr:last-child > th,
-  .policies-graph > .table-bordered > tbody > tr:last-child > th,
+  .policies-chart > .table-bordered > tbody > tr:last-child > th,
   .tax-receipt-content .form-user-incomings > .table-bordered > tbody > tr:last-child > th,
   .tax-receipt-content #tax-amount > .table-bordered > tbody > tr:last-child > th,
   .panel > .table-bordered > tfoot > tr:last-child > td,
   .panel-downloads > .table-bordered > tfoot > tr:last-child > td,
   .home-content .options .option > div > .table-bordered > tfoot > tr:last-child > td,
   .budget-intro .budget-step > .table-bordered > tfoot > tr:last-child > td,
-  .policies-graph > .table-bordered > tfoot > tr:last-child > td,
+  .policies-chart > .table-bordered > tfoot > tr:last-child > td,
   .tax-receipt-content .form-user-incomings > .table-bordered > tfoot > tr:last-child > td,
   .tax-receipt-content #tax-amount > .table-bordered > tfoot > tr:last-child > td,
   .panel > .table-bordered > tfoot > tr:last-child > th,
   .panel-downloads > .table-bordered > tfoot > tr:last-child > th,
   .home-content .options .option > div > .table-bordered > tfoot > tr:last-child > th,
   .budget-intro .budget-step > .table-bordered > tfoot > tr:last-child > th,
-  .policies-graph > .table-bordered > tfoot > tr:last-child > th,
+  .policies-chart > .table-bordered > tfoot > tr:last-child > th,
   .tax-receipt-content .form-user-incomings > .table-bordered > tfoot > tr:last-child > th,
   .tax-receipt-content #tax-amount > .table-bordered > tfoot > tr:last-child > th,
   .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr:last-child > td,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr:last-child > td,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr:last-child > td,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr:last-child > td,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr:last-child > td,
   .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
   .panel-downloads > .table-responsive > .table-bordered > tbody > tr:last-child > th,
   .home-content .options .option > div > .table-responsive > .table-bordered > tbody > tr:last-child > th,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-  .policies-graph > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .policies-chart > .table-responsive > .table-bordered > tbody > tr:last-child > th,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tbody > tr:last-child > th,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tbody > tr:last-child > th,
   .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .panel-downloads > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .home-content .options .option > div > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-  .policies-graph > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+  .policies-chart > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
   .panel-downloads > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
   .home-content .options .option > div > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
   .budget-intro .budget-step > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-  .policies-graph > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .policies-chart > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
   .tax-receipt-content .form-user-incomings > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
   .tax-receipt-content #tax-amount > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
     border-bottom: 0; }
-.panel > .table-responsive, .panel-downloads > .table-responsive, .home-content .options .option > div > .table-responsive, .budget-intro .budget-step > .table-responsive, .policies-graph > .table-responsive, .tax-receipt-content .form-user-incomings > .table-responsive, .tax-receipt-content #tax-amount > .table-responsive {
+.panel > .table-responsive, .panel-downloads > .table-responsive, .home-content .options .option > div > .table-responsive, .budget-intro .budget-step > .table-responsive, .policies-chart > .table-responsive, .tax-receipt-content .form-user-incomings > .table-responsive, .tax-receipt-content #tax-amount > .table-responsive {
   border: 0;
   margin-bottom: 0; }
 
 .panel-group {
   margin-bottom: 20px; }
-  .panel-group .panel, .panel-group .panel-downloads, .panel-group .home-content .options .option > div, .home-content .options .panel-group .option > div, .panel-group .budget-intro .budget-step, .budget-intro .panel-group .budget-step, .panel-group .policies-graph, .panel-group .tax-receipt-content .form-user-incomings, .tax-receipt-content .panel-group .form-user-incomings, .panel-group .tax-receipt-content #tax-amount, .tax-receipt-content .panel-group #tax-amount {
+  .panel-group .panel, .panel-group .panel-downloads, .panel-group .home-content .options .option > div, .home-content .options .panel-group .option > div, .panel-group .budget-intro .budget-step, .budget-intro .panel-group .budget-step, .panel-group .policies-chart, .panel-group .tax-receipt-content .form-user-incomings, .tax-receipt-content .panel-group .form-user-incomings, .panel-group .tax-receipt-content #tax-amount, .tax-receipt-content .panel-group #tax-amount {
     margin-bottom: 0;
     border-radius: 0; }
-    .panel-group .panel + .panel, .panel-group .panel-downloads + .panel, .panel-group .home-content .options .option > div + .panel, .home-content .options .panel-group .option > div + .panel, .panel-group .budget-intro .budget-step + .panel, .budget-intro .panel-group .budget-step + .panel, .panel-group .policies-graph + .panel, .panel-group .tax-receipt-content .form-user-incomings + .panel, .tax-receipt-content .panel-group .form-user-incomings + .panel, .panel-group .tax-receipt-content #tax-amount + .panel, .tax-receipt-content .panel-group #tax-amount + .panel, .panel-group .panel + .panel-downloads, .panel-group .panel-downloads + .panel-downloads, .panel-group .home-content .options .option > div + .panel-downloads, .home-content .options .panel-group .option > div + .panel-downloads, .panel-group .budget-intro .budget-step + .panel-downloads, .budget-intro .panel-group .budget-step + .panel-downloads, .panel-group .policies-graph + .panel-downloads, .panel-group .tax-receipt-content .form-user-incomings + .panel-downloads, .tax-receipt-content .panel-group .form-user-incomings + .panel-downloads, .panel-group .tax-receipt-content #tax-amount + .panel-downloads, .tax-receipt-content .panel-group #tax-amount + .panel-downloads, .panel-group .home-content .options .option > .panel + div, .home-content .options .panel-group .option > .panel + div, .panel-group .home-content .options .option > .panel-downloads + div, .home-content .options .panel-group .option > .panel-downloads + div, .panel-group .home-content .options .option > div + div, .home-content .options .panel-group .option > div + div, .panel-group .budget-intro .home-content .options .option > .budget-step + div, .home-content .options .panel-group .budget-intro .option > .budget-step + div, .budget-intro .panel-group .home-content .options .option > .budget-step + div, .home-content .options .budget-intro .panel-group .option > .budget-step + div, .panel-group .home-content .options .option > .policies-graph + div, .home-content .options .panel-group .option > .policies-graph + div, .panel-group .tax-receipt-content .home-content .options .option > .form-user-incomings + div, .home-content .options .panel-group .tax-receipt-content .option > .form-user-incomings + div, .tax-receipt-content .panel-group .home-content .options .option > .form-user-incomings + div, .home-content .options .tax-receipt-content .panel-group .option > .form-user-incomings + div, .panel-group .tax-receipt-content .home-content .options .option > #tax-amount + div, .home-content .options .panel-group .tax-receipt-content .option > #tax-amount + div, .tax-receipt-content .panel-group .home-content .options .option > #tax-amount + div, .home-content .options .tax-receipt-content .panel-group .option > #tax-amount + div, .panel-group .budget-intro .panel + .budget-step, .budget-intro .panel-group .panel + .budget-step, .panel-group .budget-intro .panel-downloads + .budget-step, .budget-intro .panel-group .panel-downloads + .budget-step, .panel-group .home-content .options .budget-intro .option > div + .budget-step, .budget-intro .panel-group .home-content .options .option > div + .budget-step, .home-content .options .panel-group .budget-intro .option > div + .budget-step, .budget-intro .home-content .options .panel-group .option > div + .budget-step, .panel-group .budget-intro .budget-step + .budget-step, .budget-intro .panel-group .budget-step + .budget-step, .panel-group .budget-intro .policies-graph + .budget-step, .budget-intro .panel-group .policies-graph + .budget-step, .panel-group .tax-receipt-content .budget-intro .form-user-incomings + .budget-step, .budget-intro .panel-group .tax-receipt-content .form-user-incomings + .budget-step, .tax-receipt-content .panel-group .budget-intro .form-user-incomings + .budget-step, .budget-intro .tax-receipt-content .panel-group .form-user-incomings + .budget-step, .panel-group .tax-receipt-content .budget-intro #tax-amount + .budget-step, .budget-intro .panel-group .tax-receipt-content #tax-amount + .budget-step, .tax-receipt-content .panel-group .budget-intro #tax-amount + .budget-step, .budget-intro .tax-receipt-content .panel-group #tax-amount + .budget-step, .panel-group .panel + .policies-graph, .panel-group .panel-downloads + .policies-graph, .panel-group .home-content .options .option > div + .policies-graph, .home-content .options .panel-group .option > div + .policies-graph, .panel-group .budget-intro .budget-step + .policies-graph, .budget-intro .panel-group .budget-step + .policies-graph, .panel-group .policies-graph + .policies-graph, .panel-group .tax-receipt-content .form-user-incomings + .policies-graph, .tax-receipt-content .panel-group .form-user-incomings + .policies-graph, .panel-group .tax-receipt-content #tax-amount + .policies-graph, .tax-receipt-content .panel-group #tax-amount + .policies-graph, .panel-group .tax-receipt-content .panel + .form-user-incomings, .tax-receipt-content .panel-group .panel + .form-user-incomings, .panel-group .tax-receipt-content .panel-downloads + .form-user-incomings, .tax-receipt-content .panel-group .panel-downloads + .form-user-incomings, .panel-group .home-content .options .tax-receipt-content .option > div + .form-user-incomings, .tax-receipt-content .panel-group .home-content .options .option > div + .form-user-incomings, .home-content .options .panel-group .tax-receipt-content .option > div + .form-user-incomings, .tax-receipt-content .home-content .options .panel-group .option > div + .form-user-incomings, .panel-group .budget-intro .tax-receipt-content .budget-step + .form-user-incomings, .tax-receipt-content .panel-group .budget-intro .budget-step + .form-user-incomings, .budget-intro .panel-group .tax-receipt-content .budget-step + .form-user-incomings, .tax-receipt-content .budget-intro .panel-group .budget-step + .form-user-incomings, .panel-group .tax-receipt-content .policies-graph + .form-user-incomings, .tax-receipt-content .panel-group .policies-graph + .form-user-incomings, .panel-group .tax-receipt-content .form-user-incomings + .form-user-incomings, .tax-receipt-content .panel-group .form-user-incomings + .form-user-incomings, .panel-group .tax-receipt-content #tax-amount + .form-user-incomings, .tax-receipt-content .panel-group #tax-amount + .form-user-incomings, .panel-group .tax-receipt-content .panel + #tax-amount, .tax-receipt-content .panel-group .panel + #tax-amount, .panel-group .tax-receipt-content .panel-downloads + #tax-amount, .tax-receipt-content .panel-group .panel-downloads + #tax-amount, .panel-group .home-content .options .tax-receipt-content .option > div + #tax-amount, .tax-receipt-content .panel-group .home-content .options .option > div + #tax-amount, .home-content .options .panel-group .tax-receipt-content .option > div + #tax-amount, .tax-receipt-content .home-content .options .panel-group .option > div + #tax-amount, .panel-group .budget-intro .tax-receipt-content .budget-step + #tax-amount, .tax-receipt-content .panel-group .budget-intro .budget-step + #tax-amount, .budget-intro .panel-group .tax-receipt-content .budget-step + #tax-amount, .tax-receipt-content .budget-intro .panel-group .budget-step + #tax-amount, .panel-group .tax-receipt-content .policies-graph + #tax-amount, .tax-receipt-content .panel-group .policies-graph + #tax-amount, .panel-group .tax-receipt-content .form-user-incomings + #tax-amount, .tax-receipt-content .panel-group .form-user-incomings + #tax-amount, .panel-group .tax-receipt-content #tax-amount + #tax-amount, .tax-receipt-content .panel-group #tax-amount + #tax-amount {
+    .panel-group .panel + .panel, .panel-group .panel-downloads + .panel, .panel-group .home-content .options .option > div + .panel, .home-content .options .panel-group .option > div + .panel, .panel-group .budget-intro .budget-step + .panel, .budget-intro .panel-group .budget-step + .panel, .panel-group .policies-chart + .panel, .panel-group .tax-receipt-content .form-user-incomings + .panel, .tax-receipt-content .panel-group .form-user-incomings + .panel, .panel-group .tax-receipt-content #tax-amount + .panel, .tax-receipt-content .panel-group #tax-amount + .panel, .panel-group .panel + .panel-downloads, .panel-group .panel-downloads + .panel-downloads, .panel-group .home-content .options .option > div + .panel-downloads, .home-content .options .panel-group .option > div + .panel-downloads, .panel-group .budget-intro .budget-step + .panel-downloads, .budget-intro .panel-group .budget-step + .panel-downloads, .panel-group .policies-chart + .panel-downloads, .panel-group .tax-receipt-content .form-user-incomings + .panel-downloads, .tax-receipt-content .panel-group .form-user-incomings + .panel-downloads, .panel-group .tax-receipt-content #tax-amount + .panel-downloads, .tax-receipt-content .panel-group #tax-amount + .panel-downloads, .panel-group .home-content .options .option > .panel + div, .home-content .options .panel-group .option > .panel + div, .panel-group .home-content .options .option > .panel-downloads + div, .home-content .options .panel-group .option > .panel-downloads + div, .panel-group .home-content .options .option > div + div, .home-content .options .panel-group .option > div + div, .panel-group .budget-intro .home-content .options .option > .budget-step + div, .home-content .options .panel-group .budget-intro .option > .budget-step + div, .budget-intro .panel-group .home-content .options .option > .budget-step + div, .home-content .options .budget-intro .panel-group .option > .budget-step + div, .panel-group .home-content .options .option > .policies-chart + div, .home-content .options .panel-group .option > .policies-chart + div, .panel-group .tax-receipt-content .home-content .options .option > .form-user-incomings + div, .home-content .options .panel-group .tax-receipt-content .option > .form-user-incomings + div, .tax-receipt-content .panel-group .home-content .options .option > .form-user-incomings + div, .home-content .options .tax-receipt-content .panel-group .option > .form-user-incomings + div, .panel-group .tax-receipt-content .home-content .options .option > #tax-amount + div, .home-content .options .panel-group .tax-receipt-content .option > #tax-amount + div, .tax-receipt-content .panel-group .home-content .options .option > #tax-amount + div, .home-content .options .tax-receipt-content .panel-group .option > #tax-amount + div, .panel-group .budget-intro .panel + .budget-step, .budget-intro .panel-group .panel + .budget-step, .panel-group .budget-intro .panel-downloads + .budget-step, .budget-intro .panel-group .panel-downloads + .budget-step, .panel-group .home-content .options .budget-intro .option > div + .budget-step, .budget-intro .panel-group .home-content .options .option > div + .budget-step, .home-content .options .panel-group .budget-intro .option > div + .budget-step, .budget-intro .home-content .options .panel-group .option > div + .budget-step, .panel-group .budget-intro .budget-step + .budget-step, .budget-intro .panel-group .budget-step + .budget-step, .panel-group .budget-intro .policies-chart + .budget-step, .budget-intro .panel-group .policies-chart + .budget-step, .panel-group .tax-receipt-content .budget-intro .form-user-incomings + .budget-step, .budget-intro .panel-group .tax-receipt-content .form-user-incomings + .budget-step, .tax-receipt-content .panel-group .budget-intro .form-user-incomings + .budget-step, .budget-intro .tax-receipt-content .panel-group .form-user-incomings + .budget-step, .panel-group .tax-receipt-content .budget-intro #tax-amount + .budget-step, .budget-intro .panel-group .tax-receipt-content #tax-amount + .budget-step, .tax-receipt-content .panel-group .budget-intro #tax-amount + .budget-step, .budget-intro .tax-receipt-content .panel-group #tax-amount + .budget-step, .panel-group .panel + .policies-chart, .panel-group .panel-downloads + .policies-chart, .panel-group .home-content .options .option > div + .policies-chart, .home-content .options .panel-group .option > div + .policies-chart, .panel-group .budget-intro .budget-step + .policies-chart, .budget-intro .panel-group .budget-step + .policies-chart, .panel-group .policies-chart + .policies-chart, .panel-group .tax-receipt-content .form-user-incomings + .policies-chart, .tax-receipt-content .panel-group .form-user-incomings + .policies-chart, .panel-group .tax-receipt-content #tax-amount + .policies-chart, .tax-receipt-content .panel-group #tax-amount + .policies-chart, .panel-group .tax-receipt-content .panel + .form-user-incomings, .tax-receipt-content .panel-group .panel + .form-user-incomings, .panel-group .tax-receipt-content .panel-downloads + .form-user-incomings, .tax-receipt-content .panel-group .panel-downloads + .form-user-incomings, .panel-group .home-content .options .tax-receipt-content .option > div + .form-user-incomings, .tax-receipt-content .panel-group .home-content .options .option > div + .form-user-incomings, .home-content .options .panel-group .tax-receipt-content .option > div + .form-user-incomings, .tax-receipt-content .home-content .options .panel-group .option > div + .form-user-incomings, .panel-group .budget-intro .tax-receipt-content .budget-step + .form-user-incomings, .tax-receipt-content .panel-group .budget-intro .budget-step + .form-user-incomings, .budget-intro .panel-group .tax-receipt-content .budget-step + .form-user-incomings, .tax-receipt-content .budget-intro .panel-group .budget-step + .form-user-incomings, .panel-group .tax-receipt-content .policies-chart + .form-user-incomings, .tax-receipt-content .panel-group .policies-chart + .form-user-incomings, .panel-group .tax-receipt-content .form-user-incomings + .form-user-incomings, .tax-receipt-content .panel-group .form-user-incomings + .form-user-incomings, .panel-group .tax-receipt-content #tax-amount + .form-user-incomings, .tax-receipt-content .panel-group #tax-amount + .form-user-incomings, .panel-group .tax-receipt-content .panel + #tax-amount, .tax-receipt-content .panel-group .panel + #tax-amount, .panel-group .tax-receipt-content .panel-downloads + #tax-amount, .tax-receipt-content .panel-group .panel-downloads + #tax-amount, .panel-group .home-content .options .tax-receipt-content .option > div + #tax-amount, .tax-receipt-content .panel-group .home-content .options .option > div + #tax-amount, .home-content .options .panel-group .tax-receipt-content .option > div + #tax-amount, .tax-receipt-content .home-content .options .panel-group .option > div + #tax-amount, .panel-group .budget-intro .tax-receipt-content .budget-step + #tax-amount, .tax-receipt-content .panel-group .budget-intro .budget-step + #tax-amount, .budget-intro .panel-group .tax-receipt-content .budget-step + #tax-amount, .tax-receipt-content .budget-intro .panel-group .budget-step + #tax-amount, .panel-group .tax-receipt-content .policies-chart + #tax-amount, .tax-receipt-content .panel-group .policies-chart + #tax-amount, .panel-group .tax-receipt-content .form-user-incomings + #tax-amount, .tax-receipt-content .panel-group .form-user-incomings + #tax-amount, .panel-group .tax-receipt-content #tax-amount + #tax-amount, .tax-receipt-content .panel-group #tax-amount + #tax-amount {
       margin-top: 5px; }
   .panel-group .panel-heading {
     border-bottom: 0; }
@@ -7571,18 +7569,18 @@ button.list-group-item-danger {
     .panel-group .panel-footer + .panel-collapse .panel-body {
       border-bottom: 1px solid #ddd; }
 
-.panel-default, .data-panel .panel, .data-panel .panel-downloads, .home-content .options .data-panel .option > div, .data-panel .policies-graph, .data-panel .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-panel .form-user-incomings, .data-panel .tax-receipt-content #tax-amount, .tax-receipt-content .data-panel #tax-amount, .data-sources .panel, .data-sources .panel-downloads, .home-content .options .data-sources .option > div, .data-sources .policies-graph, .data-sources .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-sources .form-user-incomings, .data-sources .tax-receipt-content #tax-amount, .tax-receipt-content .data-sources #tax-amount, .panel-downloads, .home-content .options .option > div, .budget-intro .budget-step, .search-content .panel, .search-content .panel-downloads, .home-content .options .search-content .option > div, .search-content .policies-graph, .search-content .tax-receipt-content .form-user-incomings, .tax-receipt-content .search-content .form-user-incomings, .search-content .tax-receipt-content #tax-amount, .tax-receipt-content .search-content #tax-amount {
+.panel-default, .data-panel .panel, .data-panel .panel-downloads, .home-content .options .data-panel .option > div, .data-panel .policies-chart, .data-panel .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-panel .form-user-incomings, .data-panel .tax-receipt-content #tax-amount, .tax-receipt-content .data-panel #tax-amount, .data-sources .panel, .data-sources .panel-downloads, .home-content .options .data-sources .option > div, .data-sources .policies-chart, .data-sources .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-sources .form-user-incomings, .data-sources .tax-receipt-content #tax-amount, .tax-receipt-content .data-sources #tax-amount, .panel-downloads, .home-content .options .option > div, .budget-intro .budget-step, .search-content .panel, .search-content .panel-downloads, .home-content .options .search-content .option > div, .search-content .policies-chart, .search-content .tax-receipt-content .form-user-incomings, .tax-receipt-content .search-content .form-user-incomings, .search-content .tax-receipt-content #tax-amount, .tax-receipt-content .search-content #tax-amount {
   border-color: #ddd; }
-  .panel-default > .panel-heading, .data-panel .panel > .panel-heading, .data-panel .panel-downloads > .panel-heading, .budget-intro .data-panel .budget-step > .panel-heading, .data-panel .policies-graph > .panel-heading, .data-panel .tax-receipt-content .form-user-incomings > .panel-heading, .tax-receipt-content .data-panel .form-user-incomings > .panel-heading, .data-panel .tax-receipt-content #tax-amount > .panel-heading, .tax-receipt-content .data-panel #tax-amount > .panel-heading, .data-sources .panel > .panel-heading, .data-sources .panel-downloads > .panel-heading, .budget-intro .data-sources .budget-step > .panel-heading, .data-sources .policies-graph > .panel-heading, .data-sources .tax-receipt-content .form-user-incomings > .panel-heading, .tax-receipt-content .data-sources .form-user-incomings > .panel-heading, .data-sources .tax-receipt-content #tax-amount > .panel-heading, .tax-receipt-content .data-sources #tax-amount > .panel-heading, .panel-downloads > .panel-heading, .home-content .options .option > div > .panel-heading, .budget-intro .budget-step > .panel-heading, .search-content .panel > .panel-heading, .search-content .panel-downloads > .panel-heading, .budget-intro .search-content .budget-step > .panel-heading, .search-content .policies-graph > .panel-heading, .search-content .tax-receipt-content .form-user-incomings > .panel-heading, .tax-receipt-content .search-content .form-user-incomings > .panel-heading, .search-content .tax-receipt-content #tax-amount > .panel-heading, .tax-receipt-content .search-content #tax-amount > .panel-heading {
+  .panel-default > .panel-heading, .data-panel .panel > .panel-heading, .data-panel .panel-downloads > .panel-heading, .budget-intro .data-panel .budget-step > .panel-heading, .data-panel .policies-chart > .panel-heading, .data-panel .tax-receipt-content .form-user-incomings > .panel-heading, .tax-receipt-content .data-panel .form-user-incomings > .panel-heading, .data-panel .tax-receipt-content #tax-amount > .panel-heading, .tax-receipt-content .data-panel #tax-amount > .panel-heading, .data-sources .panel > .panel-heading, .data-sources .panel-downloads > .panel-heading, .budget-intro .data-sources .budget-step > .panel-heading, .data-sources .policies-chart > .panel-heading, .data-sources .tax-receipt-content .form-user-incomings > .panel-heading, .tax-receipt-content .data-sources .form-user-incomings > .panel-heading, .data-sources .tax-receipt-content #tax-amount > .panel-heading, .tax-receipt-content .data-sources #tax-amount > .panel-heading, .panel-downloads > .panel-heading, .home-content .options .option > div > .panel-heading, .budget-intro .budget-step > .panel-heading, .search-content .panel > .panel-heading, .search-content .panel-downloads > .panel-heading, .budget-intro .search-content .budget-step > .panel-heading, .search-content .policies-chart > .panel-heading, .search-content .tax-receipt-content .form-user-incomings > .panel-heading, .tax-receipt-content .search-content .form-user-incomings > .panel-heading, .search-content .tax-receipt-content #tax-amount > .panel-heading, .tax-receipt-content .search-content #tax-amount > .panel-heading {
     color: #333333;
     background-color: #f5f5f5;
     border-color: #ddd; }
-    .panel-default > .panel-heading + .panel-collapse > .panel-body, .data-panel .panel > .panel-heading + .panel-collapse > .panel-body, .data-panel .policies-graph > .panel-heading + .panel-collapse > .panel-body, .data-panel .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-panel .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .data-panel .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-panel #tax-amount > .panel-heading + .panel-collapse > .panel-body, .data-sources .panel > .panel-heading + .panel-collapse > .panel-body, .data-sources .policies-graph > .panel-heading + .panel-collapse > .panel-body, .data-sources .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-sources .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .data-sources .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-sources #tax-amount > .panel-heading + .panel-collapse > .panel-body, .panel-downloads > .panel-heading + .panel-collapse > .panel-body, .home-content .options .option > div > .panel-heading + .panel-collapse > .panel-body, .budget-intro .budget-step > .panel-heading + .panel-collapse > .panel-body, .search-content .panel > .panel-heading + .panel-collapse > .panel-body, .search-content .policies-graph > .panel-heading + .panel-collapse > .panel-body, .search-content .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .search-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .search-content .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .search-content #tax-amount > .panel-heading + .panel-collapse > .panel-body {
+    .panel-default > .panel-heading + .panel-collapse > .panel-body, .data-panel .panel > .panel-heading + .panel-collapse > .panel-body, .data-panel .policies-chart > .panel-heading + .panel-collapse > .panel-body, .data-panel .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-panel .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .data-panel .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-panel #tax-amount > .panel-heading + .panel-collapse > .panel-body, .data-sources .panel > .panel-heading + .panel-collapse > .panel-body, .data-sources .policies-chart > .panel-heading + .panel-collapse > .panel-body, .data-sources .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-sources .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .data-sources .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .data-sources #tax-amount > .panel-heading + .panel-collapse > .panel-body, .panel-downloads > .panel-heading + .panel-collapse > .panel-body, .home-content .options .option > div > .panel-heading + .panel-collapse > .panel-body, .budget-intro .budget-step > .panel-heading + .panel-collapse > .panel-body, .search-content .panel > .panel-heading + .panel-collapse > .panel-body, .search-content .policies-chart > .panel-heading + .panel-collapse > .panel-body, .search-content .tax-receipt-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .search-content .form-user-incomings > .panel-heading + .panel-collapse > .panel-body, .search-content .tax-receipt-content #tax-amount > .panel-heading + .panel-collapse > .panel-body, .tax-receipt-content .search-content #tax-amount > .panel-heading + .panel-collapse > .panel-body {
       border-top-color: #ddd; }
-    .panel-default > .panel-heading .badge, .data-panel .panel > .panel-heading .badge, .data-panel .policies-graph > .panel-heading .badge, .data-panel .tax-receipt-content .form-user-incomings > .panel-heading .badge, .tax-receipt-content .data-panel .form-user-incomings > .panel-heading .badge, .data-panel .tax-receipt-content #tax-amount > .panel-heading .badge, .tax-receipt-content .data-panel #tax-amount > .panel-heading .badge, .data-sources .panel > .panel-heading .badge, .data-sources .policies-graph > .panel-heading .badge, .data-sources .tax-receipt-content .form-user-incomings > .panel-heading .badge, .tax-receipt-content .data-sources .form-user-incomings > .panel-heading .badge, .data-sources .tax-receipt-content #tax-amount > .panel-heading .badge, .tax-receipt-content .data-sources #tax-amount > .panel-heading .badge, .panel-downloads > .panel-heading .badge, .home-content .options .option > div > .panel-heading .badge, .budget-intro .budget-step > .panel-heading .badge, .search-content .panel > .panel-heading .badge, .search-content .policies-graph > .panel-heading .badge, .search-content .tax-receipt-content .form-user-incomings > .panel-heading .badge, .tax-receipt-content .search-content .form-user-incomings > .panel-heading .badge, .search-content .tax-receipt-content #tax-amount > .panel-heading .badge, .tax-receipt-content .search-content #tax-amount > .panel-heading .badge {
+    .panel-default > .panel-heading .badge, .data-panel .panel > .panel-heading .badge, .data-panel .policies-chart > .panel-heading .badge, .data-panel .tax-receipt-content .form-user-incomings > .panel-heading .badge, .tax-receipt-content .data-panel .form-user-incomings > .panel-heading .badge, .data-panel .tax-receipt-content #tax-amount > .panel-heading .badge, .tax-receipt-content .data-panel #tax-amount > .panel-heading .badge, .data-sources .panel > .panel-heading .badge, .data-sources .policies-chart > .panel-heading .badge, .data-sources .tax-receipt-content .form-user-incomings > .panel-heading .badge, .tax-receipt-content .data-sources .form-user-incomings > .panel-heading .badge, .data-sources .tax-receipt-content #tax-amount > .panel-heading .badge, .tax-receipt-content .data-sources #tax-amount > .panel-heading .badge, .panel-downloads > .panel-heading .badge, .home-content .options .option > div > .panel-heading .badge, .budget-intro .budget-step > .panel-heading .badge, .search-content .panel > .panel-heading .badge, .search-content .policies-chart > .panel-heading .badge, .search-content .tax-receipt-content .form-user-incomings > .panel-heading .badge, .tax-receipt-content .search-content .form-user-incomings > .panel-heading .badge, .search-content .tax-receipt-content #tax-amount > .panel-heading .badge, .tax-receipt-content .search-content #tax-amount > .panel-heading .badge {
       color: #f5f5f5;
       background-color: #333333; }
-  .panel-default > .panel-footer + .panel-collapse > .panel-body, .data-panel .panel > .panel-footer + .panel-collapse > .panel-body, .data-panel .policies-graph > .panel-footer + .panel-collapse > .panel-body, .data-panel .tax-receipt-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-panel .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .data-panel .tax-receipt-content #tax-amount > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-panel #tax-amount > .panel-footer + .panel-collapse > .panel-body, .data-sources .panel > .panel-footer + .panel-collapse > .panel-body, .data-sources .policies-graph > .panel-footer + .panel-collapse > .panel-body, .data-sources .tax-receipt-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-sources .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .data-sources .tax-receipt-content #tax-amount > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-sources #tax-amount > .panel-footer + .panel-collapse > .panel-body, .panel-downloads > .panel-footer + .panel-collapse > .panel-body, .home-content .options .option > div > .panel-footer + .panel-collapse > .panel-body, .budget-intro .budget-step > .panel-footer + .panel-collapse > .panel-body, .search-content .panel > .panel-footer + .panel-collapse > .panel-body, .search-content .policies-graph > .panel-footer + .panel-collapse > .panel-body, .search-content .tax-receipt-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .search-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .search-content .tax-receipt-content #tax-amount > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .search-content #tax-amount > .panel-footer + .panel-collapse > .panel-body {
+  .panel-default > .panel-footer + .panel-collapse > .panel-body, .data-panel .panel > .panel-footer + .panel-collapse > .panel-body, .data-panel .policies-chart > .panel-footer + .panel-collapse > .panel-body, .data-panel .tax-receipt-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-panel .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .data-panel .tax-receipt-content #tax-amount > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-panel #tax-amount > .panel-footer + .panel-collapse > .panel-body, .data-sources .panel > .panel-footer + .panel-collapse > .panel-body, .data-sources .policies-chart > .panel-footer + .panel-collapse > .panel-body, .data-sources .tax-receipt-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-sources .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .data-sources .tax-receipt-content #tax-amount > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .data-sources #tax-amount > .panel-footer + .panel-collapse > .panel-body, .panel-downloads > .panel-footer + .panel-collapse > .panel-body, .home-content .options .option > div > .panel-footer + .panel-collapse > .panel-body, .budget-intro .budget-step > .panel-footer + .panel-collapse > .panel-body, .search-content .panel > .panel-footer + .panel-collapse > .panel-body, .search-content .policies-chart > .panel-footer + .panel-collapse > .panel-body, .search-content .tax-receipt-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .search-content .form-user-incomings > .panel-footer + .panel-collapse > .panel-body, .search-content .tax-receipt-content #tax-amount > .panel-footer + .panel-collapse > .panel-body, .tax-receipt-content .search-content #tax-amount > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ddd; }
 
 .panel-primary {
@@ -8711,8 +8709,7 @@ label {
   transition: all 0.3s ease-out; }
   .stacked-area-chart .point.hover {
     stroke-width: 2px; }
-
-#functionalChartContainer .stacked-area-chart path.area {
+.stacked-area-chart.clickable path.area {
   cursor: pointer; }
 
 .stacked-area-chart-legend {
@@ -8856,15 +8853,15 @@ label {
 .data-panel #totals-year {
   font-weight: 400;
   margin-left: 0.5em; }
-.data-panel .panel, .data-panel .panel-downloads, .data-panel .home-content .options .option > div, .home-content .options .data-panel .option > div, .data-panel .budget-intro .budget-step, .budget-intro .data-panel .budget-step, .data-panel .policies-graph, .data-panel .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-panel .form-user-incomings, .data-panel .tax-receipt-content #tax-amount, .tax-receipt-content .data-panel #tax-amount {
+.data-panel .panel, .data-panel .panel-downloads, .data-panel .home-content .options .option > div, .home-content .options .data-panel .option > div, .data-panel .budget-intro .budget-step, .budget-intro .data-panel .budget-step, .data-panel .policies-chart, .data-panel .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-panel .form-user-incomings, .data-panel .tax-receipt-content #tax-amount, .tax-receipt-content .data-panel #tax-amount {
   margin: 0;
   padding: 0;
   border-radius: 0;
   border-color: #00486b; }
-  .data-panel .panel:first-child, .data-panel .panel-downloads:first-child, .data-panel .home-content .options .option > div:first-child, .home-content .options .data-panel .option > div:first-child, .data-panel .budget-intro .budget-step:first-child, .budget-intro .data-panel .budget-step:first-child, .data-panel .policies-graph:first-child, .data-panel .tax-receipt-content .form-user-incomings:first-child, .tax-receipt-content .data-panel .form-user-incomings:first-child, .data-panel .tax-receipt-content #tax-amount:first-child, .tax-receipt-content .data-panel #tax-amount:first-child {
+  .data-panel .panel:first-child, .data-panel .panel-downloads:first-child, .data-panel .home-content .options .option > div:first-child, .home-content .options .data-panel .option > div:first-child, .data-panel .budget-intro .budget-step:first-child, .budget-intro .data-panel .budget-step:first-child, .data-panel .policies-chart:first-child, .data-panel .tax-receipt-content .form-user-incomings:first-child, .tax-receipt-content .data-panel .form-user-incomings:first-child, .data-panel .tax-receipt-content #tax-amount:first-child, .tax-receipt-content .data-panel #tax-amount:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0; }
-  .data-panel .panel:last-child, .data-panel .panel-downloads:last-child, .data-panel .home-content .options .option > div:last-child, .home-content .options .data-panel .option > div:last-child, .data-panel .budget-intro .budget-step:last-child, .budget-intro .data-panel .budget-step:last-child, .data-panel .policies-graph:last-child, .data-panel .tax-receipt-content .form-user-incomings:last-child, .tax-receipt-content .data-panel .form-user-incomings:last-child, .data-panel .tax-receipt-content #tax-amount:last-child, .tax-receipt-content .data-panel #tax-amount:last-child {
+  .data-panel .panel:last-child, .data-panel .panel-downloads:last-child, .data-panel .home-content .options .option > div:last-child, .home-content .options .data-panel .option > div:last-child, .data-panel .budget-intro .budget-step:last-child, .budget-intro .data-panel .budget-step:last-child, .data-panel .policies-chart:last-child, .data-panel .tax-receipt-content .form-user-incomings:last-child, .tax-receipt-content .data-panel .form-user-incomings:last-child, .data-panel .tax-receipt-content #tax-amount:last-child, .tax-receipt-content .data-panel #tax-amount:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
 .data-panel .panel-title {
@@ -8899,11 +8896,11 @@ label {
     margin-bottom: 10px; }
   .data-panel .panel-content .total-budgeted b {
     font-weight: 400; }
-.data-panel .panel.indicators .panel-content > p, .data-panel .indicators.panel-downloads .panel-content > p, .data-panel .home-content .options .option > div.indicators .panel-content > p, .home-content .options .data-panel .option > div.indicators .panel-content > p, .data-panel .budget-intro .indicators.budget-step .panel-content > p, .budget-intro .data-panel .indicators.budget-step .panel-content > p, .data-panel .indicators.policies-graph .panel-content > p, .data-panel .tax-receipt-content .indicators.form-user-incomings .panel-content > p, .tax-receipt-content .data-panel .indicators.form-user-incomings .panel-content > p, .data-panel .tax-receipt-content .indicators#tax-amount .panel-content > p, .tax-receipt-content .data-panel .indicators#tax-amount .panel-content > p {
+.data-panel .panel.indicators .panel-content > p, .data-panel .indicators.panel-downloads .panel-content > p, .data-panel .home-content .options .option > div.indicators .panel-content > p, .home-content .options .data-panel .option > div.indicators .panel-content > p, .data-panel .budget-intro .indicators.budget-step .panel-content > p, .budget-intro .data-panel .indicators.budget-step .panel-content > p, .data-panel .indicators.policies-chart .panel-content > p, .data-panel .tax-receipt-content .indicators.form-user-incomings .panel-content > p, .tax-receipt-content .data-panel .indicators.form-user-incomings .panel-content > p, .data-panel .tax-receipt-content .indicators#tax-amount .panel-content > p, .tax-receipt-content .data-panel .indicators#tax-amount .panel-content > p {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #99b6c4; }
-  .data-panel .panel.indicators .panel-content > p:last-child, .data-panel .indicators.panel-downloads .panel-content > p:last-child, .data-panel .home-content .options .option > div.indicators .panel-content > p:last-child, .home-content .options .data-panel .option > div.indicators .panel-content > p:last-child, .data-panel .budget-intro .indicators.budget-step .panel-content > p:last-child, .budget-intro .data-panel .indicators.budget-step .panel-content > p:last-child, .data-panel .indicators.policies-graph .panel-content > p:last-child, .data-panel .tax-receipt-content .indicators.form-user-incomings .panel-content > p:last-child, .tax-receipt-content .data-panel .indicators.form-user-incomings .panel-content > p:last-child, .data-panel .tax-receipt-content .indicators#tax-amount .panel-content > p:last-child, .tax-receipt-content .data-panel .indicators#tax-amount .panel-content > p:last-child {
+  .data-panel .panel.indicators .panel-content > p:last-child, .data-panel .indicators.panel-downloads .panel-content > p:last-child, .data-panel .home-content .options .option > div.indicators .panel-content > p:last-child, .home-content .options .data-panel .option > div.indicators .panel-content > p:last-child, .data-panel .budget-intro .indicators.budget-step .panel-content > p:last-child, .budget-intro .data-panel .indicators.budget-step .panel-content > p:last-child, .data-panel .indicators.policies-chart .panel-content > p:last-child, .data-panel .tax-receipt-content .indicators.form-user-incomings .panel-content > p:last-child, .tax-receipt-content .data-panel .indicators.form-user-incomings .panel-content > p:last-child, .data-panel .tax-receipt-content .indicators#tax-amount .panel-content > p:last-child, .tax-receipt-content .data-panel .indicators#tax-amount .panel-content > p:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border: none; }
@@ -8940,11 +8937,11 @@ label {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700; }
-  .data-sources .panel, .data-sources .panel-downloads, .data-sources .home-content .options .option > div, .home-content .options .data-sources .option > div, .data-sources .budget-intro .budget-step, .budget-intro .data-sources .budget-step, .data-sources .policies-graph, .data-sources .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-sources .form-user-incomings, .data-sources .tax-receipt-content #tax-amount, .tax-receipt-content .data-sources #tax-amount {
+  .data-sources .panel, .data-sources .panel-downloads, .data-sources .home-content .options .option > div, .home-content .options .data-sources .option > div, .data-sources .budget-intro .budget-step, .budget-intro .data-sources .budget-step, .data-sources .policies-chart, .data-sources .tax-receipt-content .form-user-incomings, .tax-receipt-content .data-sources .form-user-incomings, .data-sources .tax-receipt-content #tax-amount, .tax-receipt-content .data-sources #tax-amount {
     border-color: #C5C5C5; }
-    .data-sources .panel .panel-heading, .data-sources .panel-downloads .panel-heading, .data-sources .home-content .options .option > div .panel-heading, .home-content .options .data-sources .option > div .panel-heading, .data-sources .budget-intro .budget-step .panel-heading, .budget-intro .data-sources .budget-step .panel-heading, .data-sources .policies-graph .panel-heading, .data-sources .tax-receipt-content .form-user-incomings .panel-heading, .tax-receipt-content .data-sources .form-user-incomings .panel-heading, .data-sources .tax-receipt-content #tax-amount .panel-heading, .tax-receipt-content .data-sources #tax-amount .panel-heading {
+    .data-sources .panel .panel-heading, .data-sources .panel-downloads .panel-heading, .data-sources .home-content .options .option > div .panel-heading, .home-content .options .data-sources .option > div .panel-heading, .data-sources .budget-intro .budget-step .panel-heading, .budget-intro .data-sources .budget-step .panel-heading, .data-sources .policies-chart .panel-heading, .data-sources .tax-receipt-content .form-user-incomings .panel-heading, .tax-receipt-content .data-sources .form-user-incomings .panel-heading, .data-sources .tax-receipt-content #tax-amount .panel-heading, .tax-receipt-content .data-sources #tax-amount .panel-heading {
       background: #C5C5C5; }
-    .data-sources .panel .panel-title, .data-sources .panel-downloads .panel-title, .data-sources .home-content .options .option > div .panel-title, .home-content .options .data-sources .option > div .panel-title, .data-sources .budget-intro .budget-step .panel-title, .budget-intro .data-sources .budget-step .panel-title, .data-sources .policies-graph .panel-title, .data-sources .tax-receipt-content .form-user-incomings .panel-title, .tax-receipt-content .data-sources .form-user-incomings .panel-title, .data-sources .tax-receipt-content #tax-amount .panel-title, .tax-receipt-content .data-sources #tax-amount .panel-title {
+    .data-sources .panel .panel-title, .data-sources .panel-downloads .panel-title, .data-sources .home-content .options .option > div .panel-title, .home-content .options .data-sources .option > div .panel-title, .data-sources .budget-intro .budget-step .panel-title, .budget-intro .data-sources .budget-step .panel-title, .data-sources .policies-chart .panel-title, .data-sources .tax-receipt-content .form-user-incomings .panel-title, .tax-receipt-content .data-sources .form-user-incomings .panel-title, .data-sources .tax-receipt-content #tax-amount .panel-title, .tax-receipt-content .data-sources #tax-amount .panel-title {
       color: #fcfcfc;
       font-size: 1em;
       text-transform: uppercase; }
@@ -9787,7 +9784,7 @@ header > .container {
   .budget-data .budget-totals {
     margin-bottom: 30px;
     text-align: left; }
-    .budget-data .budget-totals .panel, .budget-data .budget-totals .panel-downloads, .budget-data .budget-totals .home-content .options .option > div, .home-content .options .budget-data .budget-totals .option > div, .budget-data .budget-totals .budget-intro .budget-step, .budget-intro .budget-data .budget-totals .budget-step, .budget-data .budget-totals .policies-graph, .budget-data .budget-totals .tax-receipt-content .form-user-incomings, .tax-receipt-content .budget-data .budget-totals .form-user-incomings, .budget-data .budget-totals .tax-receipt-content #tax-amount, .tax-receipt-content .budget-data .budget-totals #tax-amount {
+    .budget-data .budget-totals .panel, .budget-data .budget-totals .panel-downloads, .budget-data .budget-totals .home-content .options .option > div, .home-content .options .budget-data .budget-totals .option > div, .budget-data .budget-totals .budget-intro .budget-step, .budget-intro .budget-data .budget-totals .budget-step, .budget-data .budget-totals .policies-chart, .budget-data .budget-totals .tax-receipt-content .form-user-incomings, .tax-receipt-content .budget-data .budget-totals .form-user-incomings, .budget-data .budget-totals .tax-receipt-content #tax-amount, .tax-receipt-content .budget-data .budget-totals #tax-amount {
       margin-bottom: 15px; }
     .budget-data .budget-totals .panel-title {
       display: none; }
@@ -9869,11 +9866,18 @@ header > .container {
 .policies-content {
   padding-bottom: 1px; }
 
-.policies-graph {
+.policies-chart {
   position: relative;
   background: #F7F7F7;
   padding: 30px 15px 15px;
   margin: 30px 0 15px; }
+
+.policies.policy-breakdown .policies-chart .treemap-chart rect {
+  cursor: auto; }
+.policies.policy-breakdown .chart-container.stacked-area-chart .popover .popover-content {
+  text-align: left; }
+.policies.policy-breakdown .panel-downloads > p {
+  display: none; }
 
 #modal-embed .modal-body textarea {
   resize: none;
@@ -9885,13 +9889,7 @@ header > .container {
     bottom: -35px;
     left: 15px;
     margin: 0;
-    text-align: left; }
-
-  /*
-  .policies-graph{
-    padding-top: $grid-gutter-width;
-  }
-  */ }
+    text-align: left; } }
 .payments-content > .container {
   max-width: 1010px; }
 .payments-content .lead {
@@ -9901,7 +9899,7 @@ header > .container {
 .payments-content .totals-placeholder {
   margin-top: 30px;
   margin-bottom: 15px; }
-  .payments-content .totals-placeholder .panel, .payments-content .totals-placeholder .panel-downloads, .payments-content .totals-placeholder .home-content .options .option > div, .home-content .options .payments-content .totals-placeholder .option > div, .payments-content .totals-placeholder .budget-intro .budget-step, .budget-intro .payments-content .totals-placeholder .budget-step, .payments-content .totals-placeholder .policies-graph, .payments-content .totals-placeholder .tax-receipt-content .form-user-incomings, .tax-receipt-content .payments-content .totals-placeholder .form-user-incomings, .payments-content .totals-placeholder .tax-receipt-content #tax-amount, .tax-receipt-content .payments-content .totals-placeholder #tax-amount {
+  .payments-content .totals-placeholder .panel, .payments-content .totals-placeholder .panel-downloads, .payments-content .totals-placeholder .home-content .options .option > div, .home-content .options .payments-content .totals-placeholder .option > div, .payments-content .totals-placeholder .budget-intro .budget-step, .budget-intro .payments-content .totals-placeholder .budget-step, .payments-content .totals-placeholder .policies-chart, .payments-content .totals-placeholder .tax-receipt-content .form-user-incomings, .tax-receipt-content .payments-content .totals-placeholder .form-user-incomings, .payments-content .totals-placeholder .tax-receipt-content #tax-amount, .tax-receipt-content .payments-content .totals-placeholder #tax-amount {
     background: #F7F7F7; }
 
 .tax-receipt-header .lead {
@@ -10041,16 +10039,16 @@ header > .container {
       font-weight: 400; }
     .search-content #form-search-controls #year-dropdown {
       font-weight: 600; }
-  .search-content .panel, .search-content .panel-downloads, .search-content .home-content .options .option > div, .home-content .options .search-content .option > div, .search-content .budget-intro .budget-step, .budget-intro .search-content .budget-step, .search-content .policies-graph, .search-content .tax-receipt-content .form-user-incomings, .tax-receipt-content .search-content .form-user-incomings, .search-content .tax-receipt-content #tax-amount, .tax-receipt-content .search-content #tax-amount {
+  .search-content .panel, .search-content .panel-downloads, .search-content .home-content .options .option > div, .home-content .options .search-content .option > div, .search-content .budget-intro .budget-step, .budget-intro .search-content .budget-step, .search-content .policies-chart, .search-content .tax-receipt-content .form-user-incomings, .tax-receipt-content .search-content .form-user-incomings, .search-content .tax-receipt-content #tax-amount, .tax-receipt-content .search-content #tax-amount {
     border-color: #dedede;
     margin-bottom: 30px; }
-    .search-content .panel .panel-heading, .search-content .panel-downloads .panel-heading, .search-content .home-content .options .option > div .panel-heading, .home-content .options .search-content .option > div .panel-heading, .search-content .budget-intro .budget-step .panel-heading, .budget-intro .search-content .budget-step .panel-heading, .search-content .policies-graph .panel-heading, .search-content .tax-receipt-content .form-user-incomings .panel-heading, .tax-receipt-content .search-content .form-user-incomings .panel-heading, .search-content .tax-receipt-content #tax-amount .panel-heading, .tax-receipt-content .search-content #tax-amount .panel-heading {
+    .search-content .panel .panel-heading, .search-content .panel-downloads .panel-heading, .search-content .home-content .options .option > div .panel-heading, .home-content .options .search-content .option > div .panel-heading, .search-content .budget-intro .budget-step .panel-heading, .budget-intro .search-content .budget-step .panel-heading, .search-content .policies-chart .panel-heading, .search-content .tax-receipt-content .form-user-incomings .panel-heading, .tax-receipt-content .search-content .form-user-incomings .panel-heading, .search-content .tax-receipt-content #tax-amount .panel-heading, .tax-receipt-content .search-content #tax-amount .panel-heading {
       background: #F7F7F7; }
-      .search-content .panel .panel-heading h3, .search-content .panel-downloads .panel-heading h3, .search-content .home-content .options .option > div .panel-heading h3, .home-content .options .search-content .option > div .panel-heading h3, .search-content .budget-intro .budget-step .panel-heading h3, .budget-intro .search-content .budget-step .panel-heading h3, .search-content .policies-graph .panel-heading h3, .search-content .tax-receipt-content .form-user-incomings .panel-heading h3, .tax-receipt-content .search-content .form-user-incomings .panel-heading h3, .search-content .tax-receipt-content #tax-amount .panel-heading h3, .tax-receipt-content .search-content #tax-amount .panel-heading h3 {
+      .search-content .panel .panel-heading h3, .search-content .panel-downloads .panel-heading h3, .search-content .home-content .options .option > div .panel-heading h3, .home-content .options .search-content .option > div .panel-heading h3, .search-content .budget-intro .budget-step .panel-heading h3, .budget-intro .search-content .budget-step .panel-heading h3, .search-content .policies-chart .panel-heading h3, .search-content .tax-receipt-content .form-user-incomings .panel-heading h3, .tax-receipt-content .search-content .form-user-incomings .panel-heading h3, .search-content .tax-receipt-content #tax-amount .panel-heading h3, .tax-receipt-content .search-content #tax-amount .panel-heading h3 {
         margin: 10px 0; }
-        .search-content .panel .panel-heading h3:before, .search-content .panel-downloads .panel-heading h3:before, .search-content .home-content .options .option > div .panel-heading h3:before, .home-content .options .search-content .option > div .panel-heading h3:before, .search-content .budget-intro .budget-step .panel-heading h3:before, .budget-intro .search-content .budget-step .panel-heading h3:before, .search-content .policies-graph .panel-heading h3:before, .search-content .tax-receipt-content .form-user-incomings .panel-heading h3:before, .tax-receipt-content .search-content .form-user-incomings .panel-heading h3:before, .search-content .tax-receipt-content #tax-amount .panel-heading h3:before, .tax-receipt-content .search-content #tax-amount .panel-heading h3:before {
+        .search-content .panel .panel-heading h3:before, .search-content .panel-downloads .panel-heading h3:before, .search-content .home-content .options .option > div .panel-heading h3:before, .home-content .options .search-content .option > div .panel-heading h3:before, .search-content .budget-intro .budget-step .panel-heading h3:before, .budget-intro .search-content .budget-step .panel-heading h3:before, .search-content .policies-chart .panel-heading h3:before, .search-content .tax-receipt-content .form-user-incomings .panel-heading h3:before, .tax-receipt-content .search-content .form-user-incomings .panel-heading h3:before, .search-content .tax-receipt-content #tax-amount .panel-heading h3:before, .tax-receipt-content .search-content #tax-amount .panel-heading h3:before {
           color: #F7F7F7; }
-    .search-content .panel .panel-body, .search-content .panel-downloads .panel-body, .search-content .home-content .options .option > div .panel-body, .home-content .options .search-content .option > div .panel-body, .search-content .budget-intro .budget-step .panel-body, .budget-intro .search-content .budget-step .panel-body, .search-content .policies-graph .panel-body, .search-content .tax-receipt-content .form-user-incomings .panel-body, .tax-receipt-content .search-content .form-user-incomings .panel-body, .search-content .tax-receipt-content #tax-amount .panel-body, .tax-receipt-content .search-content #tax-amount .panel-body {
+    .search-content .panel .panel-body, .search-content .panel-downloads .panel-body, .search-content .home-content .options .option > div .panel-body, .home-content .options .search-content .option > div .panel-body, .search-content .budget-intro .budget-step .panel-body, .budget-intro .search-content .budget-step .panel-body, .search-content .policies-chart .panel-body, .search-content .tax-receipt-content .form-user-incomings .panel-body, .tax-receipt-content .search-content .form-user-incomings .panel-body, .search-content .tax-receipt-content #tax-amount .panel-body, .tax-receipt-content .search-content #tax-amount .panel-body {
       padding: 10px 15px 0; }
   .search-content .glossary-terms {
     margin: 0; }
@@ -10127,7 +10125,7 @@ body.widget .history-back {
       color: white;
       background: #00486b;
       text-decoration: none; }
-body.widget .policies-graph {
+body.widget .policies-chart {
   padding: 0; }
 body.widget .tab-content > a:hover {
   text-decoration: none; }
@@ -10136,11 +10134,9 @@ body.widget .tab-content > a:hover {
 body.widget .tab-pane {
   position: relative;
   padding-bottom: 15px; }
-body.widget .data-controllers-placeholder {
-  width: 150px;
-  margin: -10px auto 0; }
 body.widget .data-controllers {
-  margin-bottom: 15px; }
+  width: 150px;
+  margin: -10px auto 15px; }
   body.widget .data-controllers .title {
     padding: 5px 0;
     font-weight: 600;
@@ -10271,12 +10267,12 @@ header {
 .search-content .alert {
   background: #F7F7F7; }
 
-.search-content .panel, .search-content .panel-downloads, .search-content .home-content .options .option > div, .home-content .options .search-content .option > div, .search-content .budget-intro .budget-step, .budget-intro .search-content .budget-step, .search-content .policies-graph, .search-content .tax-receipt-content .form-user-incomings, .tax-receipt-content .search-content .form-user-incomings, .search-content .tax-receipt-content #tax-amount, .tax-receipt-content .search-content #tax-amount {
+.search-content .panel, .search-content .panel-downloads, .search-content .home-content .options .option > div, .home-content .options .search-content .option > div, .search-content .budget-intro .budget-step, .budget-intro .search-content .budget-step, .search-content .policies-chart, .search-content .tax-receipt-content .form-user-incomings, .tax-receipt-content .search-content .form-user-incomings, .search-content .tax-receipt-content #tax-amount, .tax-receipt-content .search-content #tax-amount {
   border-color: #00486b; }
-  .search-content .panel .panel-heading, .search-content .panel-downloads .panel-heading, .search-content .home-content .options .option > div .panel-heading, .home-content .options .search-content .option > div .panel-heading, .search-content .budget-intro .budget-step .panel-heading, .budget-intro .search-content .budget-step .panel-heading, .search-content .policies-graph .panel-heading, .search-content .tax-receipt-content .form-user-incomings .panel-heading, .tax-receipt-content .search-content .form-user-incomings .panel-heading, .search-content .tax-receipt-content #tax-amount .panel-heading, .tax-receipt-content .search-content #tax-amount .panel-heading {
+  .search-content .panel .panel-heading, .search-content .panel-downloads .panel-heading, .search-content .home-content .options .option > div .panel-heading, .home-content .options .search-content .option > div .panel-heading, .search-content .budget-intro .budget-step .panel-heading, .budget-intro .search-content .budget-step .panel-heading, .search-content .policies-chart .panel-heading, .search-content .tax-receipt-content .form-user-incomings .panel-heading, .tax-receipt-content .search-content .form-user-incomings .panel-heading, .search-content .tax-receipt-content #tax-amount .panel-heading, .tax-receipt-content .search-content #tax-amount .panel-heading {
     color: white;
     background: #00486b; }
-    .search-content .panel .panel-heading h3, .search-content .panel-downloads .panel-heading h3, .search-content .home-content .options .option > div .panel-heading h3, .home-content .options .search-content .option > div .panel-heading h3, .search-content .budget-intro .budget-step .panel-heading h3, .budget-intro .search-content .budget-step .panel-heading h3, .search-content .policies-graph .panel-heading h3, .search-content .tax-receipt-content .form-user-incomings .panel-heading h3, .tax-receipt-content .search-content .form-user-incomings .panel-heading h3, .search-content .tax-receipt-content #tax-amount .panel-heading h3, .tax-receipt-content .search-content #tax-amount .panel-heading h3 {
+    .search-content .panel .panel-heading h3, .search-content .panel-downloads .panel-heading h3, .search-content .home-content .options .option > div .panel-heading h3, .home-content .options .search-content .option > div .panel-heading h3, .search-content .budget-intro .budget-step .panel-heading h3, .budget-intro .search-content .budget-step .panel-heading h3, .search-content .policies-chart .panel-heading h3, .search-content .tax-receipt-content .form-user-incomings .panel-heading h3, .tax-receipt-content .search-content .form-user-incomings .panel-heading h3, .search-content .tax-receipt-content #tax-amount .panel-heading h3, .tax-receipt-content .search-content #tax-amount .panel-heading h3 {
       color: white; }
 
 .form-search-glossary .btn-default:before,
