@@ -17,13 +17,15 @@ class PintoBudgetLoader(SimpleBudgetLoader):
         # mapping to be constant over time, we are forced to amend budget data prior to 2015.
         # See https://github.com/dcabo/presupuestos-aragon/wiki/La-clasificaci%C3%B3n-funcional-en-las-Entidades-Locales
         programme_mapping = {
-            '1340': '1350'
+            # '1340': '1350'
         }
 
         is_expense = (filename.find('gastos.csv')!=-1)
         is_actual = (filename.find('/ejecucion_')!=-1)
         if is_expense:
-            fc_code = self.clean(line[1])          # Fill with zeroes on the left if needed
+            # We got 3-digit functional codes as input (mostly), so we make them all
+            # into 4-digit ones by adding an extra zero, i.e. left-justify them adding a 0.
+            fc_code = line[1].ljust(4, '0')
 
             # For years before 2015 we check whether we need to amend the programme code
             year = re.search('municipio/(\d+)/', filename).group(1)
@@ -33,23 +35,23 @@ class PintoBudgetLoader(SimpleBudgetLoader):
             return {
                 'is_expense': True,
                 'is_actual': is_actual,
-                'fc_code': fc_code.ljust(4, '0'),
-                'ec_code': self.clean(line[2])[:-2],
+                'fc_code': fc_code,
+                'ec_code': line[2][:-2],        # First three digits (everything but last two)
                 'ic_code': '100',
-                'item_number': self.clean(line[2])[-2:],    # Last two digits
-                'description': line[3],
-                'amount': self._parse_amount(line[-1 if is_actual else -4])
+                'item_number': line[2][-2:],    # Last two digits
+                'description': self._spanish_titlecase(line[3].strip()),
+                'amount': self._parse_amount(line[7 if is_actual else 4])
             }
 
         else:
             return {
                 'is_expense': False,
                 'is_actual': is_actual,
-                'ec_code': self.clean(line[0])[:-2],
-                'ic_code': '100',             # All income goes to the root node
-                'item_number': self.clean(line[0])[-2:],    # Last two digits
-                'description': line[1],
-                'amount': self._parse_amount(line[-1 if is_actual else -4])
+                'ec_code': line[0][:-2],        # First three digits (everything but last two)
+                'ic_code': '100',               # All income goes to the root node
+                'item_number': line[0][-2:],    # Last two digits
+                'description': self._spanish_titlecase(line[1].strip()),
+                'amount': self._parse_amount(line[5 if is_actual else 2])
             }
 
     # We don't have an institutional breakdown in Torrelodones, so we create just a catch-all organism.
