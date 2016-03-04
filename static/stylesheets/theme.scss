@@ -44,6 +44,10 @@ header{
   }
 }
 
+.form-search{
+  background: darken( $brand-secondary, 5% );
+}
+
 // Section Header
 .section-header .page-title{
   color: black;

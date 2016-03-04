@@ -10186,6 +10186,9 @@ header {
 .navbar-default .navbar-nav > li.active > a {
   font-weight: 600; }
 
+.form-search {
+  background: #eaeaea; }
+
 .section-header .page-title {
   color: black; }
 
