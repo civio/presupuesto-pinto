@@ -32,7 +32,7 @@ OVERVIEW_EXPENSE_NODES = ['45', '13', '92', '32', '23', '34', '33', '17']
 OVERVIEW_RELAX_FACTOR = 0.5
 
 # Show Payments section in menu & home options. Default: False.
-SHOW_PAYMENTS           = False
+SHOW_PAYMENTS           = True
 
 # Show Tax Receipt section in menu & home options. Default: False.
 SHOW_TAX_RECEIPT        = False
