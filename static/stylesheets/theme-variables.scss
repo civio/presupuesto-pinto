@@ -63,8 +63,8 @@ $container-large-desktop:    (1080px + $grid-gutter-width);
 // Main Entity Logo
 // -------------
 
-$main-entity-logo-width:   90px;
-$main-entity-logo-height:  95px;
+$main-entity-logo-width:   130px;
+$main-entity-logo-height:  130px;
 
 
 // Navbar
@@ -78,10 +78,10 @@ $navbar-border-radius: 0;
 $dvmi-menu-length: 3;  // Number of items in main menu
 
 // Navbar background color
-$navbar-default-bg: $brand-terciary;
+$navbar-default-bg: $brand-primary;
 
 // Navbar options text color
-$dvmi-navbar-color: $brand-primary;
+$dvmi-navbar-color: white;
 
 $navbar-default-link-active-color:    $brand-primary;
 $navbar-default-link-active-bg:       darken( $brand-terciary, 10% );

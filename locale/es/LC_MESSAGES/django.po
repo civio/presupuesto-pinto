@@ -68,4 +68,4 @@ msgstr ""
 
 #: templates/shared/header.html:33
 msgid "Presupuestos"
-msgstr "Presupuesto"
+msgstr "Cuentas Claras"
