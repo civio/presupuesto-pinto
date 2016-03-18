@@ -6232,22 +6232,22 @@ label {
   transition: stroke-opacity 0.3s ease-out; }
 .sankey .link.with-data {
   fill: none;
-  stroke: #b3b3b3;
+  stroke: #959595;
   stroke-opacity: .5; }
 .sankey .legend-budget circle {
-  fill: #b3b3b3;
+  fill: #959595;
   opacity: .5; }
 .sankey .link-execution.with-data {
   fill: none;
-  stroke: #00486b;
+  stroke: #007fbd;
   stroke-opacity: .5; }
 .sankey .legend-execution circle {
-  fill: #00486b;
+  fill: #007fbd;
   opacity: .5; }
 .sankey .link.no-data,
 .sankey .link-execution.no-data {
   fill: none;
-  stroke: #b3b3b3;
+  stroke: #959595;
   stroke-opacity: .5; }
 .sankey .link:hover,
 .sankey .node:hover,
@@ -6269,9 +6269,9 @@ label {
   display: inline-block;
   margin-bottom: 5px; }
 .sankey .popover-content .budgeted {
-  color: #b3b3b3; }
+  color: #959595; }
 .sankey .popover-content .executed {
-  color: #00486b;
+  color: #007fbd;
   margin-top: 10px; }
 
 .budget-summary {

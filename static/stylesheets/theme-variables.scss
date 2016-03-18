@@ -188,5 +188,5 @@ $data-sources-color: $brand-terciary;
 // Sankey Viz
 // --------------
 
-$sankey-budget-color:     mix( $gray-light, $gray-lighter, 50% );
-$sankey-execution-color:  $brand-primary;
+$sankey-budget-color:     mix( $gray-light, $gray-lighter, 75% );
+$sankey-execution-color:  lighten( $brand-primary, 16% );
