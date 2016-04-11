@@ -1,0 +1,119 @@
+<form class="form-user-incomings" action="#" method="get">
+
+  <div class="row">
+    <div class="form-group">
+      <label for="select-house">{{ _('Inmueble') }}</label>
+      <select id="select-house" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('Inmueble de valor catrastral 70.000€') }}</option>
+        <option value="1" type="text">{{ _('Inmueble de valor catrastral 150.000€') }}</option>
+        <option value="2" type="text">{{ _('Inmueble de valor catrastral 250.000€') }}</option>
+      </select>
+    </div>
+    <div class="select-info">{{ _('IBI') }}: <span id="select-house-tax"></span></div>
+    <div class="checkbox">
+      <label>
+        <input id="check-house-protected" type="checkbox">{{ _('El inmueble es Vivienda de protección pública') }}
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input id="check-house-energy" type="checkbox">{{ _('El 50% del suministro total es energía solar') }}
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="select-family">{{ _('¿Sois familia numerosa?') }}</label>
+      <select id="select-family" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('No') }}</option>
+        <option value="1" type="text">{{ _('Sí, Familia Numerosa General') }}</option>
+        <option value="2" type="text">{{ _('Sí, Familia Numerosa Especial') }}</option>
+      </select>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="form-group">
+      <label for="select-vehicle">{{ _('Vehículo') }}</label>
+      <select id="select-vehicle" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('Ninguno') }}</option>
+        <option value="1" type="text">{{ _('Coche muy pequeño') }}</option>
+        <option value="2" type="text">{{ _('Coche pequeño') }}</option>
+        <option value="3" type="text">{{ _('Coche mediano') }}</option>
+        <option value="4" type="text">{{ _('Coche grande') }}</option>
+        <option value="5" type="text">{{ _('Coche muy grande') }}</option>
+      </select>
+    </div>
+    <div class="select-info">{{ _('Impuesto a vehículos motorizados') }}: <span id="select-vehicle-tax"></span></div>
+    <div class="checkbox">
+      <label>
+        <input id="check-vehicle-new" type="checkbox">{{ _('El vehículo tiene menos de 5 años') }}
+      </label>
+    </div>
+    <div class="form-group select-vehicle-bonus-cont" style="display: none">
+      <label for="select-vehicle-bonus">{{ _('Emisiones vehículo') }}</label>
+      <select id="select-vehicle-bonus" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('menos de 50gr/km de CO2') }}</option>
+        <option value="1" type="text">{{ _('entre 51gr/km y 100gr/km de CO2') }}</option>
+        <option value="2" type="text">{{ _('entre 101gr/km y 120gr/km de CO2') }}</option>
+        <option value="3" type="text">{{ _('más de 120gr/km de CO2') }}</option>
+      </select>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="form-group">
+      <label for="select-extra-vehicle">{{ _('Vehículo adicional') }}</label>
+      <select id="select-extra-vehicle" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('Ninguno') }}</option>
+        <option value="1" type="text">{{ _('Coche muy pequeño') }}</option>
+        <option value="2" type="text">{{ _('Coche pequeño') }}</option>
+        <option value="3" type="text">{{ _('Coche mediano') }}</option>
+        <option value="4" type="text">{{ _('Coche grande') }}</option>
+        <option value="5" type="text">{{ _('Coche muy grande') }}</option>
+      </select>
+    </div>
+    <div class="select-info">{{ _('Impuesto a vehículos motorizados') }}: <span id="select-extra-vehicle-tax"></span></div>
+    <div class="checkbox">
+      <label>
+        <input id="check-extra-vehicle-new" type="checkbox">{{ _('El vehículo adicional tiene menos de 5 años') }}
+      </label>
+    </div>
+    <div class="form-group select-extra-vehicle-bonus-cont" style="display: none">
+      <label for="select-extra-vehicle-bonus">{{ _('Emisiones vehículo adicional') }}</label>
+      <select id="select-extra-vehicle-bonus" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('menos de 50gr/km de CO2') }}</option>
+        <option value="1" type="text">{{ _('entre 51gr/km y 100gr/km de CO2') }}</option>
+        <option value="2" type="text">{{ _('entre 101gr/km y 120gr/km de CO2') }}</option>
+        <option value="3" type="text">{{ _('más de 120gr/km de CO2') }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group">
+      <label for="select-parking">{{ _('¿Tienes un vado?') }}</label>
+      <select id="select-parking" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('No') }}</option>
+        <option value="1" type="text">{{ _('Sí, comunitario') }}</option>
+        <option value="2" type="text">{{ _('Sí, privado') }}</option>
+      </select>
+    </div>
+    <div class="select-info">{{ _('Tasa') }}: <span id="select-parking-tax"></span></div>
+  </div>
+
+  <div class="row">
+    <div class="form-group">
+      <label for="select-payment-method">{{ _('¿Cómo realizas el pago?') }}</label>
+      <select id="select-payment-method" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('Domiciliación Bancaria') }}</option>
+        <option value="1" type="text">{{ _('Pago Anticipado') }}</option>
+        <option value="2" type="text">{{ _('Sistema Especial pagos') }}</option>
+      </select>
+    </div>
+  </div>
+
+</form>
+
+<div id="tax-amount">
+  <p>{{ _('Contribuyes con un total de <b id="tax-amount-paid"></b> a los presupuestos del Gobierno de Aragón')|safe }}.</p>
+  <p><small>{{ _('Esta estimación del cálculo es meramente orientativa. Si la cuota a pagar de IBI en 2016 le saliese superior a la del año anterior, también tiene derecho a una bonificación especifica que puede consultar en la <a href="http://www.ayto-pinto.es/documents/20912/92dd9636-672b-4b6a-a94f-8ada80283962" target="_blank">Ordenanza</a>')|safe }}</small></p>
+</div>  

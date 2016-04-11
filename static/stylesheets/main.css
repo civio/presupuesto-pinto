@@ -1558,7 +1558,7 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .home-content .options .option, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .tax-receipt-content .form-user-incomings .form-group, .tax-receipt-content .form-user-incomings .select-info, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .home-content .options .option, .tax-receipt-content .form-user-incomings .form-group, .tax-receipt-content .form-user-incomings .select-info, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1721,7 +1721,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .home-content .options .option, .col-sm-5, .col-sm-6, .tax-receipt-content .form-user-incomings .form-group, .tax-receipt-content .form-user-incomings .select-info, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .home-content .options .option, .tax-receipt-content .form-user-incomings .form-group, .tax-receipt-content .form-user-incomings .select-info, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
 
   .col-sm-1 {
@@ -1733,13 +1733,13 @@ pre {
   .col-sm-3 {
     width: 25%; }
 
-  .col-sm-4, .home-content .options .option {
+  .col-sm-4 {
     width: 33.33333%; }
 
   .col-sm-5 {
     width: 41.66667%; }
 
-  .col-sm-6, .tax-receipt-content .form-user-incomings .form-group, .tax-receipt-content .form-user-incomings .select-info {
+  .col-sm-6, .home-content .options .option, .tax-receipt-content .form-user-incomings .form-group, .tax-receipt-content .form-user-incomings .select-info {
     width: 50%; }
 
   .col-sm-7 {
@@ -7163,7 +7163,7 @@ header > .container {
           background: #407690; }
     @media (min-width: 768px) {
       .navbar-default .navbar-nav > li {
-        width: 25%; }
+        width: 20%; }
         .navbar-default .navbar-nav > li > a {
           border-right: 1px solid #80a4b5;
           border-bottom: none; }
@@ -7203,20 +7203,33 @@ header > .container {
   padding: 30px 0;
   background: #00486b;
   text-align: center; }
-  .main-footer .logo-aragon {
+  .main-footer .credit-aragon {
     font-weight: 300;
     margin-bottom: 30px; }
-    .main-footer .logo-aragon > a {
-      padding-right: 10px;
-      padding-left: 10px;
+    .main-footer .credit-aragon > a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
+      text-indent: -9999px;
+      overflow: hidden;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-color: transparent;
       -webkit-transition: opacity 0.3s ease-out;
       -o-transition: opacity 0.3s ease-out;
       transition: opacity 0.3s ease-out; }
-      .main-footer .logo-aragon > a:hover {
+      .main-footer .credit-aragon > a:hover {
         opacity: 0.7;
         text-decoration: none; }
-    .main-footer .logo-aragon .img-aragon {
-      margin-top: -4px; }
+      .main-footer .credit-aragon > a.link-civio {
+        width: 107px;
+        height: 30px;
+        background-image: url(../assets/logo-civio.png); }
+      .main-footer .credit-aragon > a.link-aragon {
+        width: 163px;
+        height: 28px;
+        margin-top: -5px;
+        background-image: url(../assets/logoAragonOpenData.png); }
   .main-footer .footer-menu {
     margin: 0;
     padding: 0; }
@@ -7288,6 +7301,8 @@ header > .container {
   .home-content .options {
     padding-top: 30px;
     background: #F7F7F7; }
+    .home-content .options .option:nth-child(odd) {
+      clear: both; }
     .home-content .options .option > div {
       padding: 15px;
       margin-bottom: 30px;
@@ -7392,7 +7407,7 @@ header > .container {
       margin-bottom: 15px; }
     .budget-data .budget-totals .panel-title {
       display: none; }
-      .budget-data .budget-totals .panel-title .col-sm-4, .budget-data .budget-totals .panel-title .home-content .options .option, .home-content .options .budget-data .budget-totals .panel-title .option {
+      .budget-data .budget-totals .panel-title .col-sm-4 {
         padding-right: 0;
         padding-left: 0; }
     .budget-data .budget-totals .panel-content {
@@ -7403,7 +7418,7 @@ header > .container {
         margin-right: 0;
         padding-bottom: 10px;
         border-top: 1px solid #99b6c4; }
-      .budget-data .budget-totals .panel-content .col-sm-4, .budget-data .budget-totals .panel-content .home-content .options .option, .home-content .options .budget-data .budget-totals .panel-content .option {
+      .budget-data .budget-totals .panel-content .col-sm-4 {
         padding: 10px 0 0; }
       .budget-data .budget-totals .panel-content .data-label {
         float: left;
@@ -7412,7 +7427,7 @@ header > .container {
         border: none;
         font-weight: 600;
         margin-bottom: 0; }
-        .budget-data .budget-totals .panel-content .total-executed > .col-sm-4, .budget-data .budget-totals .panel-content .home-content .options .total-executed > .option, .home-content .options .budget-data .budget-totals .panel-content .total-executed > .option {
+        .budget-data .budget-totals .panel-content .total-executed > .col-sm-4 {
           padding-bottom: 0; }
       .budget-data .budget-totals .panel-content .total-budgeted {
         border-top: none; }
@@ -7434,7 +7449,7 @@ header > .container {
     display: block; }
   .budget-data .budget-totals .panel-content .row {
     padding-bottom: 0; }
-  .budget-data .budget-totals .panel-content .col-sm-4, .budget-data .budget-totals .panel-content .home-content .options .option, .home-content .options .budget-data .budget-totals .panel-content .option {
+  .budget-data .budget-totals .panel-content .col-sm-4 {
     padding: 10px; }
   .budget-data .budget-totals .panel-content .data-label {
     display: none; } }
@@ -7978,5 +7993,19 @@ header {
   height: 15px;
   margin-top: 2px;
   background: url(/static/assets/search-icon.png) no-repeat 0 0 transparent; }
+
+.tax-receipt-content #tax-amount small {
+  display: inline-block;
+  max-width: 600px;
+  font-size: 0.613em;
+  font-style: italic;
+  margin-top: 15px; }
+.tax-receipt-content .form-user-incomings {
+  padding-top: 30px; }
+  .tax-receipt-content .form-user-incomings .checkbox {
+    clear: both; }
+    .tax-receipt-content .form-user-incomings .checkbox label {
+      font-weight: 600;
+      line-height: 20px; }
 
 /*# sourceMappingURL=main.css.map */
