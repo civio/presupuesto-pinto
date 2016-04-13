@@ -52,13 +52,20 @@
       var parkingTaxPaid = getParkingTaxPaid();
       $('#select-parking-tax').text(formatTaxAmount(parkingTaxPaid));
 
-      var bonusPayment = getBonusPayment();
+      var bonusPayment = [0.025, 0.05, 0.01][$('#select-payment-method').val()];
+      var bonusMax = [300, 500, 100][$('#select-payment-method').val()];
 
-      totalTaxPaid = (houseTaxPaid + vehicleTaxPaid + extraVehicleTaxPaid + parkingTaxPaid) * (1-bonusPayment);
+      totalTaxPaid = houseTaxPaid + vehicleTaxPaid + extraVehicleTaxPaid + parkingTaxPaid;
       
-      $('#select-payment-bonus').text(formatTaxAmount(-totalTaxPaid*bonusPayment));
+      bonusPaymentAmount = totalTaxPaid * bonusPayment
 
-      $("#tax-amount-paid").text( formatTaxAmount(totalTaxPaid * (1-bonusPayment)) );
+      if (bonusPaymentAmount > bonusMax) {
+        bonusPaymentAmount = bonusMax;
+      }
+
+      $('#select-payment-bonus').text(formatTaxAmount(-bonusPaymentAmount));
+
+      $("#tax-amount-paid").text( formatTaxAmount(totalTaxPaid - bonusPaymentAmount) );
       // XXX: window.location.hash = 'ingresos='+getIncomeInEuros();
 
       if ( myGrid !== undefined )  myGrid.destroy();
