@@ -236,6 +236,11 @@ header{
   .form-user-incomings{
     padding-top: $grid-gutter-width;
 
+    .input-group-addon:last-child{
+      font-weight: $font-weight-600;
+      background: none;
+    }
+
     .checkbox{
       clear: both;
 

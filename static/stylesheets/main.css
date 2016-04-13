@@ -8002,6 +8002,9 @@ header {
   margin-top: 15px; }
 .tax-receipt-content .form-user-incomings {
   padding-top: 30px; }
+  .tax-receipt-content .form-user-incomings .input-group-addon:last-child {
+    font-weight: 600;
+    background: none; }
   .tax-receipt-content .form-user-incomings .checkbox {
     clear: both; }
     .tax-receipt-content .form-user-incomings .checkbox label {

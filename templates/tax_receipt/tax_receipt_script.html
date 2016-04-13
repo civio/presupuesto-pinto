@@ -16,21 +16,8 @@
     }
 
     function getHouseTaxPaid() {
-      var val = [70000, 150000, 250000][$("#select-house").val()];
-      var family = [$("#select-family").val()];
-      var bonus = 0;
-      if (family == 1 && val <= 70000) {
-        bonus = 0.6;
-      } else if (family == 1 && val <= 200000) {
-        bonus = 0.5;
-      } else if (family == 2 && val <= 70000) {
-        bonus = 0.9;
-      } else if (family == 2 && val <= 200000) {
-        bonus = 0.7;
-      }
-      if ($('#check-house-protected').is(':checked')) bonus += 0.5;
-      if ($('#check-house-energy').is(':checked')) bonus += 0.5;
-      if (bonus > 1) bonus = 1;
+      var val = $("#select-house").val();
+      var bonus = [0, 0.5, 0.5, 0.5, 0.5, 0.6, 0.5, 0.9, 0.7][$("#select-house-bonus").val()];
       return (val*0.0075)*(1-bonus);
     }
     function getVehicleTaxPaid() {
@@ -46,6 +33,11 @@
     function getParkingTaxPaid() {
       return [0, 9.39, 43.24][$("#select-parking").val()];
     }
+    function getBonusPayment() {
+      var bonus = [0.025, 0.05, 0.01][$('#select-payment-method').val()];
+      var bonusMax = [300, 500, 100][$('#select-payment-method').val()];
+      return (bonus > bonusMax) ? bonusMax : bonus;
+    }
 
     function redrawGrid() {
       var houseTaxPaid = getHouseTaxPaid();
@@ -60,11 +52,13 @@
       var parkingTaxPaid = getParkingTaxPaid();
       $('#select-parking-tax').text(formatTaxAmount(parkingTaxPaid));
 
-      totalTaxPaid = houseTaxPaid + vehicleTaxPaid + extraVehicleTaxPaid + parkingTaxPaid;
+      var bonusPayment = getBonusPayment();
 
-      var bonusPayment = [0.025, 0.05, 0.01][$('#select-payment-method').val()]
+      totalTaxPaid = (houseTaxPaid + vehicleTaxPaid + extraVehicleTaxPaid + parkingTaxPaid) * (1-bonusPayment);
+      
+      $('#select-payment-bonus').text(formatTaxAmount(-totalTaxPaid*bonusPayment));
 
-      $("#tax-amount-paid").text( formatTaxAmount(totalTaxPaid*(1-bonusPayment)) );
+      $("#tax-amount-paid").text( formatTaxAmount(totalTaxPaid * (1-bonusPayment)) );
       // XXX: window.location.hash = 'ingresos='+getIncomeInEuros();
 
       if ( myGrid !== undefined )  myGrid.destroy();
@@ -111,7 +105,7 @@
       }
     });
 
-    $('select, input[type="checkbox"]').change(redrawGrid);
+    $('select, input[type="number"], input[type="checkbox"]').change(redrawGrid);
     redrawGrid();
   })
 </script>
