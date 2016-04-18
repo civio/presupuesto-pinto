@@ -69,3 +69,7 @@ msgstr ""
 #: templates/shared/header.html:33
 msgid "Presupuestos"
 msgstr "Cuentas Claras"
+
+#: templates/budgets/budgets_intro.html:10
+msgid "Se realiza a través de impuestos directos -como el impuesto de bienes inmuebles (IBI) o el de vehículos de tracción mecánica (IVTM)- y de tasas -como la de recogida de basura"
+msgstr "Se realiza a través de impuestos directos -como el impuesto de bienes inmuebles (IBI) o el de vehículos de tracción mecánica (IVTM)- , de tasas -como la de vados- y de precios públicos –como el pago por alquiler de pistas deportivas-"
