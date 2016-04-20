@@ -24,8 +24,9 @@ OVERVIEW_INCOME_NODES = [
                             'nodes': [['11', '116']],
                             'label': 'Impuesto sobre incremento del valor de los terrenos de naturaleza urbana'
                           },
+                          '91'
                         ]
-OVERVIEW_EXPENSE_NODES = ['45', '13', '92', '32', '23', '34', '33', '17']
+OVERVIEW_EXPENSE_NODES = ['45', '13', '92', '32', '23', '34', '33', '17', '01']
 
 # How aggresive should the Sankey diagram reorder the nodes. Default: 0.79 (Optional)
 # Note: 0.5 usually leaves nodes ordered as defined. 0.95 sorts by size (decreasing).
@@ -46,12 +47,15 @@ SHOW_INSTITUTIONAL_TAB  = False
 # Show an extra tab with funding breakdown (only applicable to some budgets). Default: False.
 # SHOW_FUNDING_TAB = False
 
+# Adjust inflation in amounts in Overview page. Default: True
+ADJUST_INFLATION_IN_OVERVIEW = False
+
 # Show an extra column with actual revenues/expenses. Default: True.
 # Warning: the execution data still gets shown in the summary chart and in downloads.
 #SHOW_ACTUAL = True
 
 # Include financial income/expenditures in overview and global policy breakdowns. Default: False.
-INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = False
+INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = True
 
 # Search in entity names. Default: True.
 SEARCH_ENTITIES = False
