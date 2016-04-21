@@ -33,11 +33,6 @@
     function getParkingTaxPaid() {
       return [0, 9.39, 43.24][$("#select-parking").val()];
     }
-    function getBonusPayment() {
-      var bonus = [0.025, 0.05, 0.01][$('#select-payment-method').val()];
-      var bonusMax = [300, 500, 100][$('#select-payment-method').val()];
-      return (bonus > bonusMax) ? bonusMax : bonus;
-    }
 
     function redrawGrid() {
       var houseTaxPaid = getHouseTaxPaid();
@@ -52,8 +47,8 @@
       var parkingTaxPaid = getParkingTaxPaid();
       $('#select-parking-tax').text(formatTaxAmount(parkingTaxPaid));
 
-      var bonusPayment = [0.025, 0.05, 0.01][$('#select-payment-method').val()];
-      var bonusMax = [300, 500, 100][$('#select-payment-method').val()];
+      var bonusPayment = [0.025, 0.05, 0.01, 0][$('#select-payment-method').val()];
+      var bonusMax = [300, 500, 100, 0][$('#select-payment-method').val()];
 
       totalTaxPaid = houseTaxPaid + vehicleTaxPaid + extraVehicleTaxPaid + parkingTaxPaid;
       
