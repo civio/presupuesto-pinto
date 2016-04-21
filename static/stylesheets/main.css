@@ -7913,6 +7913,14 @@ header {
   background: #F7F7F7; }
   .home-content .options .option > div .icon {
     color: #C5C5C5; }
+  .home-content .options .option > div.option-global .icon {
+    color: #C4BE0B; }
+  .home-content .options .option > div.option-policies .icon {
+    color: #CF7200; }
+  .home-content .options .option > div.option-payments .icon {
+    color: #8F4F00; }
+  .home-content .options .option > div.option-tax .icon {
+    color: #990F1F; }
   .home-content .options .option > div .option-title:hover h3 {
     color: #414141; }
   .home-content .options .option > div .btn {

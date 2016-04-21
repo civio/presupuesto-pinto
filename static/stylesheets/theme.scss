@@ -105,6 +105,19 @@ header{
       color: $brand-terciary;
     }
 
+    &.option-global .icon{
+      color: #C4BE0B;
+    }
+    &.option-policies .icon{
+      color: #CF7200;
+    }
+    &.option-payments .icon{
+      color: #8F4F00;
+    }
+    &.option-tax .icon{
+      color: #990F1F;
+    }
+
     .option-title:hover h3{
       color: $text-color;
     }
