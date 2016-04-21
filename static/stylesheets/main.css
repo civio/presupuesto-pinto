@@ -6225,6 +6225,10 @@ label {
         font-size: 0.875em;
         font-weight: 400; }
 
+.chromeframe {
+  margin-bottom: 30px;
+  font-size: 1.125em; }
+
 .sankey .link,
 .sankey .link-execution {
   -webkit-transition: stroke-opacity 0.3s ease-out;
@@ -6254,11 +6258,16 @@ label {
 .sankey .link-execution:hover {
   stroke-opacity: .9;
   cursor: pointer; }
-.sankey .legend-item text,
 .sankey .node text {
+  fill: #222222;
   pointer-events: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1em; }
+.sankey .legend-item text {
+  fill: #777777;
+  font-size: 0.929em;
+  font-weight: 600;
+  text-transform: uppercase; }
 .sankey .legend-note circle {
   fill: none; }
 .sankey .legend-note text {
@@ -7394,7 +7403,23 @@ header > .container {
         font-weight: 600; }
 
 .budget-viz .page-title {
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
+.budget-viz .sankey-labels {
+  position: relative;
+  color: #777777;
+  font-size: 0.929em;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .budget-viz .sankey-labels .sankey-label-incomes,
+  .budget-viz .sankey-labels .sankey-label-expenses {
+    position: absolute;
+    top: 0; }
+  .budget-viz .sankey-labels .sankey-label-incomes {
+    left: 3px; }
+  .budget-viz .sankey-labels .sankey-label-expenses {
+    right: 3px; }
+.budget-viz .data-controllers {
+  margin-top: -10px; }
 
 .budget-data {
   background: #F7F7F7; }
