@@ -39,8 +39,6 @@ class PintoBudgetLoader(SimpleBudgetLoader):
             # into 4-digit ones by adding an extra zero, i.e. left-justify them adding a 0.
             fc_code = line[1].rjust(3, '0').ljust(4, '0')
 
-            print fc_code
-
             # For years before 2015 we check whether we need to amend the programme code
             year = re.search('municipio/(\d+)/', filename).group(1)
             if int(year) < 2015:
