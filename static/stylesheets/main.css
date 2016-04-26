@@ -7879,9 +7879,9 @@ body.widget .stacked-area-chart-legend {
   background: #407690; }
 
 .btn[class*="icon-"]:before {
-  float: right;
-  margin-right: 0;
-  margin-left: 10px; }
+  float: left;
+  margin-right: 10px;
+  margin-left: 0; }
 
 header {
   background: white; }
