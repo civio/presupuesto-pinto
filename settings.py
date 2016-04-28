@@ -85,3 +85,5 @@ COOKIES_URL             = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/av
 
 # Allow overriding of default treemap color scheme
 COLOR_SCALE = [ '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf' ]
+
+ANALYTICS_CODE = 'UA-77087919-1'
