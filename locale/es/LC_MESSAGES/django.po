@@ -21,6 +21,10 @@ msgstr ""
 msgid "Presupuestos del Gobierno de Aragón"
 msgstr "Presupuestos del Ayuntamiento de Pinto"
 
+#: templates/shared/meta.html:3 templates/shared/meta.html:10
+msgid "Información presupuestaria del Gobierno de Aragón"
+msgstr "Información presupuestaria del Ayuntamiento de Pinto"
+
 #: templates/budgets/budgets_intro.html:16
 msgid ""
 "El dinero recaudado localmente se complementa con las transferencias de la "
