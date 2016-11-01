@@ -7287,8 +7287,6 @@ header > .container {
   margin-top: 15px; }
 .policies.policy-breakdown .policies-chart {
   margin: 15px 0; }
-.policies.policy-breakdown .policies-chart .treemap-chart rect {
-  cursor: auto; }
 .policies.policy-breakdown .chart-container.stacked-area-chart .popover .popover-content {
   text-align: left; }
 .policies.policy-breakdown .panel-downloads > p {
