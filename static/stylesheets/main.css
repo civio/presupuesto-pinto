@@ -5925,11 +5925,13 @@ label {
     top: auto;
     pointer-events: none; }
     .chart-container .popover .popover-title {
-      margin: 0 15px;
+      color: #00486b;
+      margin: 0 10px;
       padding: 8px 0;
       background: white;
       border-color: #d0d0d0;
       font-size: 1.5em;
+      line-height: 1.125em;
       font-weight: 300;
       text-align: center; }
     .chart-container .popover .popover-content {
@@ -6123,16 +6125,18 @@ label {
 .stacked-area-chart .bkg-rect {
   fill: white;
   cursor: auto; }
-.stacked-area-chart .nonexecuted-overlay rect {
+.stacked-area-chart .overlay rect {
   fill: white;
   opacity: 0.5;
   pointer-events: none; }
-.stacked-area-chart .nonexecuted-overlay text {
+.stacked-area-chart .overlay text {
   display: none;
   font-size: 0.875em;
   fill: #777777;
   text-anchor: middle;
   font-style: italic; }
+.stacked-area-chart .overlay.project-overlay rect {
+  opacity: 0.72; }
 .stacked-area-chart .axis path,
 .stacked-area-chart .axis line {
   fill: none;
@@ -6176,6 +6180,9 @@ label {
     stroke-width: 2px; }
 .stacked-area-chart.clickable path.area {
   cursor: pointer; }
+.stacked-area-chart .popover .popover-title {
+  padding-bottom: 0;
+  text-align: left; }
 
 .stacked-area-chart-legend {
   margin-left: 80px;
@@ -6211,15 +6218,16 @@ label {
       .stacked-area-chart-legend .label.inactive span {
         background: none !important; }
 
-.chart-embed-btn a {
+.chart-embed-btn span {
   display: block;
   position: absolute;
   top: -5px;
   right: 20px;
   width: 30px;
   height: 30px;
-  background: url(../assets/icon-share.png) no-repeat center center #00486b; }
-  .chart-embed-btn a:hover {
+  background: url(../assets/icon-share.png) no-repeat center center #00486b;
+  cursor: pointer; }
+  .chart-embed-btn span:hover {
     background-color: #005985; }
 
 .policy-breakdown .chart-container .popover-content-year {
@@ -6241,7 +6249,7 @@ label {
   font-weight: 300; }
 
 @media (min-width: 768px) {
-  .stacked-area-chart .nonexecuted-overlay text {
+  .stacked-area-chart .overlay text {
     display: block; } }
 .chosen-container-single .chosen-single {
   border-radius: 0;
@@ -6255,8 +6263,8 @@ label {
 .chosen-container-single .chosen-single,
 .chosen-container-active.chosen-with-drop .chosen-single {
   background: white; }
-  .chosen-container-single .chosen-single div b,
-  .chosen-container-active.chosen-with-drop .chosen-single div b {
+  .chosen-container-single .chosen-single div strong,
+  .chosen-container-active.chosen-with-drop .chosen-single div strong {
     background-position-y: 6px; }
 
 .chosen-container .chosen-results li.highlighted {
@@ -6311,6 +6319,9 @@ label {
     .data-controllers .slider.slider-horizontal .slider-tick-label {
       color: #555555;
       font-size: 0.875em;
+      line-height: 1em;
+      margin-top: 5px;
+      vertical-align: top;
       cursor: pointer; }
     .data-controllers .slider.slider-horizontal .tooltip.top {
       margin-left: -22px;
@@ -6366,7 +6377,7 @@ label {
   text-transform: uppercase; }
   .data-panel .panel-title .main-label {
     font-weight: 400; }
-    .data-panel .panel-title .main-label b {
+    .data-panel .panel-title .main-label strong {
       font-weight: 300; }
 .data-panel .panel-content {
   font-size: 1.25em;
@@ -6380,7 +6391,7 @@ label {
       display: table; }
     .data-panel .panel-content > p:after {
       clear: both; }
-  .data-panel .panel-content b {
+  .data-panel .panel-content strong {
     display: block;
     font-weight: 600;
     float: right;
@@ -6389,7 +6400,7 @@ label {
     font-size: 1.125em;
     font-weight: 600;
     margin-bottom: 10px; }
-  .data-panel .panel-content .total-budgeted b {
+  .data-panel .panel-content .total-budgeted strong {
     font-weight: 400; }
 .data-panel .panel.indicators, .data-panel .indicators.panel-downloads, .data-panel .home-content .options .option > div.indicators, .home-content .options .data-panel .option > div.indicators, .data-panel .budget-intro .indicators.budget-step, .budget-intro .data-panel .indicators.budget-step, .data-panel .indicators.policies-chart, .data-panel .tax-receipt-content .indicators.form-user-incomings, .tax-receipt-content .data-panel .indicators.form-user-incomings, .data-panel .tax-receipt-content .indicators#tax-amount, .tax-receipt-content .data-panel .indicators#tax-amount {
   margin-bottom: 15px; }
@@ -6408,6 +6419,8 @@ label {
   height: 22px;
   margin-top: 1px;
   margin-right: 8px;
+  overflow: hidden;
+  text-indent: -9999px;
   border-radius: 11px;
   background: url(../assets/bugget-stream-question.png) no-repeat 6px 3px #777777;
   -webkit-transition: background-color 0.3s ease-out;
@@ -6481,7 +6494,7 @@ label {
       margin-bottom: 5px; }
     .data-sources .source-list a {
       color: #464646; }
-    .data-sources .source-list b {
+    .data-sources .source-list strong {
       font-weight: 600; }
   .data-sources .alert {
     font-size: .875em;
@@ -6496,7 +6509,7 @@ label {
       padding-left: 15px; }
     .data-sources .alert li {
       margin-bottom: 5px; }
-    .data-sources .alert b {
+    .data-sources .alert strong {
       font-weight: 600; }
 
 .SvgOverlay svg {
@@ -6665,7 +6678,7 @@ label {
     .panel-downloads a:hover {
       color: #F7F7F7;
       text-decoration: none; }
-  .panel-downloads b {
+  .panel-downloads strong {
     font-weight: 600; }
 
 .social-sharing {
@@ -6694,6 +6707,8 @@ label {
       background: #F7F7F7 url(../assets/social.png) no-repeat center;
       height: 40px;
       width: 40px;
+      overflow: hidden;
+      text-indent: -9999px;
       border-radius: 50%;
       -webkit-transition: background-color 0.3s ease-out;
       -o-transition: background-color 0.3s ease-out;
@@ -7071,7 +7086,7 @@ header > .container {
         .home-content .expense-examples li a:hover {
           color: #414141;
           text-decoration: none; }
-      .home-content .expense-examples li b {
+      .home-content .expense-examples li strong {
         font-weight: 600; }
   .home-content .options {
     padding-top: 30px;
@@ -7122,12 +7137,12 @@ header > .container {
     .home-content .expense-examples {
       padding-top: 45px;
       padding-right: 30px; }
-      .home-content .expense-examples li b {
+      .home-content .expense-examples li strong {
         display: block; } }
   @media (min-width: 992px) {
     .home-content {
       text-align: left; }
-      .home-content .expense-examples li b {
+      .home-content .expense-examples li strong {
         float: right; } }
 
 .budget-intro {
@@ -7146,7 +7161,7 @@ header > .container {
         font-size: 3.5em;
         background-position: right center;
         background-repeat: no-repeat; }
-      .budget-intro .budget-step h3 b {
+      .budget-intro .budget-step h3 strong {
         display: block;
         color: #555555;
         font-size: .875em;
@@ -7165,7 +7180,7 @@ header > .container {
       margin: 0;
       padding: 15px;
       font-weight: 300; }
-      .budget-intro .budget-step .desc b {
+      .budget-intro .budget-step .desc strong {
         font-weight: 600; }
 
 .budget-viz .page-title {
@@ -7358,7 +7373,7 @@ header > .container {
   font-size: 1.375em;
   font-weight: 300;
   text-transform: none; }
-  #query-panel .panel-content b {
+  #query-panel .panel-content strong {
     display: inline;
     float: none;
     font-weight: 400; }
@@ -7410,7 +7425,7 @@ header > .container {
   text-align: center;
   border: 1px solid #F7F7F7;
   background: #F7F7F7; }
-  .tax-receipt-content #tax-amount b {
+  .tax-receipt-content #tax-amount strong {
     font-weight: 600; }
 .tax-receipt-content #footnote-receipt {
   font-size: 0.875em;
@@ -7483,7 +7498,7 @@ header > .container {
     background: #F7F7F7;
     margin-top: 30px;
     margin-bottom: 30px; }
-    .glossary-content .glossary-search-results .alert b {
+    .glossary-content .glossary-search-results .alert strong {
       font-weight: 600; }
 .glossary-content .pagination-container {
   text-align: center;
@@ -7501,7 +7516,7 @@ header > .container {
     font-size: 1.125em;
     background: #F7F7F7;
     margin-bottom: 15px; }
-    .search-content .alert b {
+    .search-content .alert strong {
       font-weight: 600; }
   .search-content #form-search-controls {
     padding: 10px 0;
