@@ -6,7 +6,6 @@ class PintoPaymentsLoader(PaymentsLoader):
 
     # Parse an input line into fields
     def parse_item(self, budget, line):
-
         programme_id = line[3].strip()[:2]
 
         # Convert 11 to 01 for Deuda Pública
@@ -14,7 +13,10 @@ class PintoPaymentsLoader(PaymentsLoader):
             programme_id = '01'
 
         # But what we want as area is the programme description
-        programme = Budget.objects.get_all_descriptions(budget.entity)['functional'][programme_id]
+        if programme_id != '':
+            programme = Budget.objects.get_all_descriptions(budget.entity)['functional'][programme_id]
+        else:
+            programme = 'Otros' # Sometimes the programme id is missing in the input data
 
         return {
             'area': programme,
