@@ -65,6 +65,15 @@ LANGUAGES = (
   ('es', 'Castellano'),
 )
 
+
+# Facebook Aplication ID used in social_sharing temaplate. Default: ''
+# In order to get the ID create an app in https://developers.facebook.com/
+FACEBOOK_ID             = '1107147986070866'
+
+# Google Analytics ID. Default: ''
+# In order to get the ID create a Google Analytics Acount in https://analytics.google.com/analytics/web/
+ANALYTICS_ID            = 'UA-77087919-1'
+
 # Setup Data Source Budget link
 DATA_SOURCE_BUDGET      = 'http://www.ayto-pinto.es/presupuestos-municipales-2015'
 
@@ -84,6 +93,4 @@ MAIN_ENTITY_LEGAL_URL   = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/av
 COOKIES_URL             = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
 
 # Allow overriding of default treemap color scheme
-COLOR_SCALE = [ '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf' ]
-
-ANALYTICS_CODE = 'UA-77087919-1'
+# COLOR_SCALE = [ '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf' ]
