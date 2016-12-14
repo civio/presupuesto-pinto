@@ -1,97 +1,52 @@
 <script>
   $(function () {
-    var totalTaxPaid = 0;
 
-    // Display amount as expense per capita
-    function calculatePersonalTax(value, type, item) {
-      if (value == null) return null;
-      if (type === 'filter') return value;  // We filter based on the raw data
+    var breakdown = {{ breakdown.to_json( labels=descriptions['functional'] )|safe }},
+        getBreakdownValue = getBreakdownValueFunction('expense', '{{ latest_budget.name()|safe }}'),
+        gridData = breakdownToTable(breakdown),
+        myGrid;
 
-      var percentage = value / getBreakdownValue(item.root);
-      return formatDecimal(percentage * totalTaxPaid) + " €";
+
+    // Set house tax values & callback
+    TaxReceipt.taxes.house.values        = [0, 0.5, 0.5, 0.5, 0.5, 0.6, 0.5, 0.9, 0.7];
+    TaxReceipt.taxes.house.callback      = function(selector, values) {
+      var value = $('#select-'+selector).val();
+      var bonus = values[$('#select-'+selector+'-bonus').val()];
+      return (value*0.0075) * (1-bonus);
+    };
+    // Set vehicles tax values & callback
+    TaxReceipt.taxes.vehicle.values        = [0, 12.62, 34.08, 71.94, 89.61, 112];
+    TaxReceipt.taxes.vehicleExtra.values   = [0, 12.62, 34.08, 71.94, 89.61, 112];
+    TaxReceipt.taxes.vehicle.callback      =
+    TaxReceipt.taxes.vehicleExtra.callback = function(selector, values) {
+      var value = values[$('#select-'+selector).val()];
+      var bonus = ($('#check-'+selector+'-new').is(':checked')) ? [0.75, 0.4, 0.2, 0][$('#select-'+selector+'-bonus').val()] : 0;
+      return value * (1-bonus);
     }
+    // Set parking tax values
+    TaxReceipt.taxes.parking.values = [0, 9.39, 43.24];
 
-    function formatTaxAmount(value) {
-      return numeral(value).format( '0,0.00', Math.floor ) + " €";
-    }
+    // Remove garbage tax
+    delete TaxReceipt.taxes.garbage;
 
-    function getHouseTaxPaid() {
-      var val = $("#select-house").val();
-      var bonus = [0, 0.5, 0.5, 0.5, 0.5, 0.6, 0.5, 0.9, 0.7][$("#select-house-bonus").val()];
-      return (val*0.0075)*(1-bonus);
-    }
-    function getVehicleTaxPaid() {
-      var val = [0, 12.62, 34.08, 71.94, 89.61, 112][$("#select-vehicle").val()];
-      var bonus = ($('#check-vehicle-new').is(':checked')) ? [0.75, 0.4, 0.2, 0][$("#select-vehicle-bonus").val()] : 0;
-      return val*(1-bonus);
-    }
-    function getExtraVehicleTaxPaid() {
-      var val = [0, 12.62, 34.08, 71.94, 89.61, 112][$("#select-extra-vehicle").val()];
-      var bonus = ($('#check-extra-vehicle-new').is(':checked')) ? [0.75, 0.4, 0.2, 0][$("#select-extra-vehicle-bonus").val()] : 0;
-      return val*(1-bonus);
-    }
-    function getParkingTaxPaid() {
-      return [0, 9.39, 43.24][$("#select-parking").val()];
-    }
-
-    function redrawGrid() {
-      var houseTaxPaid = getHouseTaxPaid();
-      $('#select-house-tax').text(formatTaxAmount(houseTaxPaid));
-
-      var vehicleTaxPaid = getVehicleTaxPaid();
-      $('#select-vehicle-tax').text(formatTaxAmount(vehicleTaxPaid));
-
-      var extraVehicleTaxPaid = getExtraVehicleTaxPaid();
-      $('#select-extra-vehicle-tax').text(formatTaxAmount(extraVehicleTaxPaid));
-
-      var parkingTaxPaid = getParkingTaxPaid();
-      $('#select-parking-tax').text(formatTaxAmount(parkingTaxPaid));
-
-      var bonusPayment = [0.025, 0.05, 0.01, 0][$('#select-payment-method').val()];
-      var bonusMax = [300, 500, 100, 0][$('#select-payment-method').val()];
-
-      totalTaxPaid = houseTaxPaid + vehicleTaxPaid + extraVehicleTaxPaid + parkingTaxPaid;
-      
-      bonusPaymentAmount = totalTaxPaid * bonusPayment
-
-      if (bonusPaymentAmount > bonusMax) {
-        bonusPaymentAmount = bonusMax;
-      }
-
-      $('#select-payment-bonus').text(formatTaxAmount(-bonusPaymentAmount));
-
-      $("#tax-amount-paid").text( formatTaxAmount(totalTaxPaid - bonusPaymentAmount) );
-      // XXX: window.location.hash = 'ingresos='+getIncomeInEuros();
-
-      if ( myGrid !== undefined )  myGrid.destroy();
-      myGrid = createBudgetGrid("#myGrid", gridData, [
-        { data: "label", title: '{{ _("Política") }}', render: getPolicyLinkFormatter() },
-        {
-          data: getBreakdownValue,
-          title: '{{ _("Gasto") }}',
-          render: calculatePersonalTax,
-          year: breakdown.years['{{ latest_budget.name()|safe }}']
+    // Add extra tax for payment method bonus
+    // We can add new taxed to TaxReceipt.taxes object
+    // defining its selector, values array & callback function
+    TaxReceipt.taxes.payment = {
+      selector: 'payment-method',
+      values:   [0.025, 0.05, 0.01, 0],
+      callback: function(selector, values) {
+        var value = values[$('#select-'+selector).val()];
+        var bonusMax = [300, 500, 100, 0][$('#select-'+selector).val()];
+        bonusAmount = TaxReceipt.totalTaxPaid * value;
+        if (bonusAmount > bonusMax) {
+          bonusAmount = bonusMax;
         }
-      ]);
-    }
+        return -bonusAmount;
+      }
+    };
 
-    function setStatus(house, vehicle, extraVehicle, garbage, parking) {
-      $('#select-house').val(house);
-      $('#select-vehicle').val(vehicle);
-      $('#select-extra-vehicle').val(extraVehicle);
-      $('#select-garbage').val(garbage);
-      $('#select-parking').val(parking);
-    }
-    $("#scenario-1").click(function() { setStatus(0, 1, 2, 0, 0); redrawGrid(); return false; });
-    $("#scenario-2").click(function() { setStatus(1, 1, 2, 1, 1); redrawGrid(); return false; });
-    $("#scenario-3").click(function() { setStatus(2, 0, 0, 2, 0); redrawGrid(); return false; });
-    $("#scenario-4").click(function() { setStatus(3, 1, 2, 3, 2); redrawGrid(); return false; });
-
-    var breakdown = {{ breakdown.to_json( labels=descriptions['functional'] )|safe }};
-    var gridData = breakdownToTable(breakdown);
-    var getBreakdownValue = getBreakdownValueFunction('expense', '{{ latest_budget.name()|safe }}');
-    var myGrid;
-
+    // Show/hide vehicles bonus select
     $('#check-vehicle-new').change(function(){
       if( $(this).is(':checked') ){
         $('.select-vehicle-bonus-cont').show();
@@ -107,7 +62,25 @@
       }
     });
 
-    $('select, input[type="number"], input[type="checkbox"]').change(redrawGrid);
-    redrawGrid();
+    // Override redrawGrid method
+    TaxReceipt.redrawGrid = function() {
+      if ( myGrid !== undefined ) {
+        myGrid.destroy();
+      }
+
+      myGrid = createBudgetGrid('#myGrid', gridData, [
+        { data: 'label', title: '{{ _("Política") }}', render: getPolicyLinkFormatter() },
+        {
+          data:   getBreakdownValue,
+          title:  '{{ _("Gasto") }}',
+          render: TaxReceipt.calculatePersonalTax,
+          year:   breakdown.years['{{ latest_budget.name()|safe }}']
+        }
+      ]);
+    };
+
+    // Initialize tax receipt
+    TaxReceipt.setup( breakdown, getBreakdownValue );
+
   })
 </script>
