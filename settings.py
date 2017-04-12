@@ -54,6 +54,12 @@ ADJUST_INFLATION_IN_OVERVIEW = False
 # Warning: the execution data still gets shown in the summary chart and in downloads.
 #SHOW_ACTUAL = True
 
+# Treemap use max value between tabs to calculate size. Default: True
+# Note: Pinto has some unusually large 2012 revenues due to refinancing, so this setting
+# makes a noticeable impact. We launched when a global max value was not available, so
+# we'll keep it like that.
+TREEMAP_GLOBAL_MAX_VALUE = False
+
 # Include financial income/expenditures in overview and global policy breakdowns. Default: False.
 INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = True
 
