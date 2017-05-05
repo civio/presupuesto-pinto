@@ -34,10 +34,10 @@
     // defining its selector, values array & callback function
     TaxReceipt.taxes.payment = {
       selector: 'payment-method',
-      values:   [0.025, 0.05, 0.01, 0],
+      values:   [0.025, 0.05, 0.005, 0],
       callback: function(selector, values) {
         var value = values[$('#select-'+selector).val()];
-        var bonusMax = [300, 500, 100, 0][$('#select-'+selector).val()];
+        var bonusMax = [250, 500, 100, 0][$('#select-'+selector).val()];
         bonusAmount = TaxReceipt.totalTaxPaid * value;
         if (bonusAmount > bonusMax) {
           bonusAmount = bonusMax;
