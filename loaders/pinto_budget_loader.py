@@ -39,6 +39,9 @@ class PintoBudgetLoader(SimpleBudgetLoader):
             # into 4-digit ones by adding an extra zero, i.e. left-justify them adding a 0.
             fc_code = line[1].rjust(3, '0').ljust(4, '0')
 
+            # The economic codes sometimes miss the last two digits
+            ec_code = line[2].ljust(5, '0')
+
             # For years before 2015 we check whether we need to amend the programme code
             year = re.search('municipio/(\d+)/', filename).group(1)
             if int(year) < 2015:
@@ -50,20 +53,21 @@ class PintoBudgetLoader(SimpleBudgetLoader):
                 'is_expense': True,
                 'is_actual': is_actual,
                 'fc_code': fc_code,
-                'ec_code': line[2][:-2],        # First three digits (everything but last two)
+                'ec_code': ec_code[:-2],        # First three digits (everything but last two)
                 'ic_code': '100',
-                'item_number': line[2][-2:],    # Last two digits
+                'item_number': ec_code[-2:],    # Last two digits
                 'description': self._spanish_titlecase(line[3].strip()),
                 'amount': self._parse_amount(line[7 if is_actual else 4])
             }
 
         else:
+            ec_code = line[0].ljust(5, '0')
             return {
                 'is_expense': False,
                 'is_actual': is_actual,
-                'ec_code': line[0][:-2],        # First three digits (everything but last two)
+                'ec_code': ec_code[:-2],        # First three digits (everything but last two)
                 'ic_code': '100',               # All income goes to the root node
-                'item_number': line[0][-2:],    # Last two digits
+                'item_number': ec_code[-2:],    # Last two digits
                 'description': self._spanish_titlecase(line[1].strip()),
                 'amount': self._parse_amount(line[5 if is_actual else 2])
             }
