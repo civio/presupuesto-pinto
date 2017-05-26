@@ -17,10 +17,23 @@ header{
   background: white;
 }
 
-@media (min-width: $screen-sm-min) {
-  
-  header > .container{
-    background: url(../assets/pinto-gobierno-abierto.jpg) no-repeat right center white;
+#pinto-gobierno-abierto{
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: block;
+  width: 176px;
+  height: 130px;
+  text-indent: -9999px;
+  background: url(../assets/pinto-gobierno-abierto.jpg) no-repeat 0 0 white;
+  z-index: 90;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    display: none;
   }
 }
 
