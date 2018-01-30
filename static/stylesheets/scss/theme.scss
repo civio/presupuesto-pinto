@@ -251,12 +251,16 @@ header{
 
 .tax-receipt-content{
 
+  #tax-amount{
+    padding: 2*$grid-gutter-width/3 $grid-gutter-width/2 $grid-gutter-width/3;
+  }
+  
   #tax-amount small{
     display: inline-block;
     max-width: 600px;
     font-size: 0.613em;
     font-style: italic;
-    margin-top: $grid-gutter-width/2;
+    margin-top: $grid-gutter-width/3;
   }
 
   .form-user-incomings{

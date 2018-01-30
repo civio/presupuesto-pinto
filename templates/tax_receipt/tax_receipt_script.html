@@ -12,7 +12,7 @@
     TaxReceipt.taxes.house.callback      = function(selector, values) {
       var value = $('#select-'+selector).val();
       var bonus = values[$('#select-'+selector+'-bonus').val()];
-      return (value*0.0075) * (1-bonus);
+      return (value*0.00655) * (1-bonus);
     };
     // Set vehicles tax values & callback
     TaxReceipt.taxes.vehicle.values        = [0, 12.62, 34.08, 71.94, 89.61, 112];
