@@ -37,7 +37,7 @@ class PintoBudgetLoader(SimpleBudgetLoader):
         if is_expense:
             # We got 3-digit functional codes as input (mostly), so we make them all
             # into 4-digit ones by adding an extra zero, i.e. left-justify them adding a 0.
-            fc_code = line[1].rjust(3, '0').ljust(4, '0')
+            fc_code = self.clean(line[1]).rjust(3, '0').ljust(4, '0')
 
             # The economic codes sometimes miss the last two digits
             ec_code = line[2].ljust(5, '0')
