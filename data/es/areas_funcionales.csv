@@ -56,6 +56,8 @@
 1,7,0,0,Administración general del medio ambiente
 1,7,1,0,Parques y jardines
 1,7,2,0,Protección y mejora del medio ambiente
+1,7,2,1,"Protección contra la contaminación acústica, lumínica y atmosférica"
+1,7,9,0,Otras actuaciones relacionadas con el medio ambiente
 2,3,0,0,Administración general de servicios sociales
 2,3,1,0,Acción social
 2,3,1,1,Administracion general de serv.sociales
@@ -85,6 +87,7 @@
 4,3,3,0,Desarrollo empresarial
 4,3,9,0,Otras actuaciones sectoriales
 4,4,1,0,"Promoción, mantenimiento y desarrollo del transporte"
+4,4,2,0,Infraestructuras de transporte
 4,5,0,0,Administración general de infraestructuras
 4,5,4,0,Caminos vecinales
 4,5,9,0,Otras infraestructuras
