@@ -2,29 +2,78 @@
 from budget_app.loaders import PaymentsLoader
 from budget_app.models import Budget
 
-class PintoPaymentsLoader(PaymentsLoader):
+payments_mapping = {
+    'default': {'fc_code': 3, 'date': 0, 'payee': 6, 'description': 7, 'amount': 1},
+    '2018': {'fc_code': 2, 'date': 0, 'payee': 6, 'description': 7, 'amount': 1},
+}
 
+
+class PaymentsCsvMapper:
+    def __init__(self, year):
+        mapping = payments_mapping.get(str(year))
+
+        if not mapping:
+            mapping = payments_mapping.get('default')
+
+        self.fc_code = mapping.get('fc_code')
+        self.date = mapping.get('date')
+        self.payee = mapping.get('payee')
+        self.description = mapping.get('description')
+        self.amount = mapping.get('amount')
+
+
+class PintoPaymentsLoader(PaymentsLoader):
     # Parse an input line into fields
     def parse_item(self, budget, line):
-        programme_id = line[3].strip()[:2]
+        # Mapper
+        mapper = PaymentsCsvMapper(budget.year)
 
-        # Convert 11 to 01 for Deuda Pública
-        if programme_id == '11':
-            programme_id = '01'
+        # We got the functional codes
+        fc_code = line[mapper.fc_code].strip()
 
-        # But what we want as area is the programme description
-        if programme_id != '':
-            programme = Budget.objects.get_all_descriptions(budget.entity)['functional'][programme_id]
+        # In 2018 we don't get the functional code in all the data, so we use
+        # the full budget heading
+        if budget.year == 2018:
+            fc_code = fc_code[7:10]
+
+        # We got some 2- digit codes or even empty ones, so we normalize them
+        fc_code = fc_code.rjust(3, '0')
+
+        # First two digits of the programme make the policy id
+        policy_id = fc_code[:2]
+
+        # What we want as area is the policy description
+        if policy_id == '00':
+            policy = 'Otros'
         else:
-            programme = 'Otros' # Sometimes the programme id is missing in the input data
+            policy = Budget.objects.get_all_descriptions(budget.entity)['functional'][policy_id]
+
+        # We got an iso date or nothing
+        date = line[mapper.date] if mapper.date else None
+
+        # Payee data
+        payee = line[mapper.payee].strip()
+
+        # We got some anonymized entries
+        anonymized = False
+        anonymized = (True if payee == 'Protegido(*)' else anonymized)
+
+        # Description
+        description = line[mapper.description].strip()
+
+        # Amount
+        amount = line[mapper.amount]
+        amount = self._read_english_number(amount)
 
         return {
-            'area': programme,
+            'area': policy,
             'programme': None,
-            'fc_code': None,  # We don't try (yet) to have foreign keys to existing records
+            'ic_code': None,
+            'fc_code': None,
             'ec_code': None,
-            'date': line[0].strip(),
-            'payee': self._titlecase(line[6].strip()),
-            'description': self._spanish_titlecase(line[7].strip()),
-            'amount': self._read_english_number(line[1])
+            'date': date,
+            'payee': payee,
+            'anonymized': anonymized,
+            'description': description,
+            'amount': amount
         }
