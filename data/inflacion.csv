@@ -1,4 +1,4 @@
-# Datos de IPC del INE. Medias anuales de IPC para Cataluña, Índice general: 
+# Datos de IPC del INE. Medias anuales de IPC para la Comunidad de Madrid, Índice general:
 #   http://www.ine.es/jaxiT3/Tabla.htm?t=22350&L=0
 # Las tasas de inflación se refieren a la media de las tasas interanuales durante los 12
 # meses del año. Esta media es calculada por el INE y publicada en la dirección indicada.
@@ -17,4 +17,5 @@
 2015,-0.5
 2016,-0.3
 2017,1.8
-2018,0
+2018,1.7
+2019,0

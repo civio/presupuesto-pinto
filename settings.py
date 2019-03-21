@@ -1,7 +1,5 @@
 # -*- coding: UTF-8 -*-
 
-from django.conf.urls import patterns, url
-
 MAIN_ENTITY_LEVEL = 'municipio'
 MAIN_ENTITY_NAME = 'Pinto'
 
@@ -11,21 +9,20 @@ PAYMENTS_LOADER = 'PintoPaymentsLoader'
 FEATURED_PROGRAMMES = ['9240', '4910', '4930']
 
 OVERVIEW_INCOME_NODES = [
-                          {
-                            'nodes': [['11', '113']],
-                            'label': 'Sobre bienes inmuebles de naturaleza urbana'
-                          },
-                          '13', '42', '45',
-                          {
-                            'nodes': [['11', '115']],
-                            'label': 'Impuesto sobre vehículos de tracción mecánica'
-                          },
-                          {
-                            'nodes': [['11', '116']],
-                            'label': 'Impuesto sobre incremento del valor de los terrenos de naturaleza urbana'
-                          },
-                          '91'
-                        ]
+    {'nodes': [['11', '113']], 'label': 'Sobre bienes inmuebles de naturaleza urbana'},
+    '13',
+    '42',
+    '45',
+    {
+        'nodes': [['11', '115']],
+        'label': 'Impuesto sobre vehículos de tracción mecánica',
+    },
+    {
+        'nodes': [['11', '116']],
+        'label': 'Impuesto sobre incremento del valor de los terrenos de naturaleza urbana',
+    },
+    '91',
+]
 OVERVIEW_EXPENSE_NODES = ['45', '13', '92', '32', '23', '34', '33', '17', '01']
 
 # How aggresive should the Sankey diagram reorder the nodes. Default: 0.79 (Optional)
@@ -33,24 +30,23 @@ OVERVIEW_EXPENSE_NODES = ['45', '13', '92', '32', '23', '34', '33', '17', '01']
 OVERVIEW_RELAX_FACTOR = 0.5
 
 # Show Payments section in menu & home options. Default: False.
-SHOW_PAYMENTS           = True
+SHOW_PAYMENTS = True
 
 # Show Tax Receipt section in menu & home options. Default: False.
-SHOW_TAX_RECEIPT        = True
+SHOW_TAX_RECEIPT = True
 
 # Show Counties & Towns links in Policies section in menu & home options. Default: False.
 SHOW_COUNTIES_AND_TOWNS = False
 
 # Show an extra tab with institutional breakdown. Default: True.
-SHOW_INSTITUTIONAL_TAB  = False
+SHOW_INSTITUTIONAL_TAB = False
 
 # Show an extra tab with funding breakdown (only applicable to some budgets). Default: False.
 # SHOW_FUNDING_TAB = False
 
-
 # Show an extra column with actual revenues/expenses. Default: True.
 # Warning: the execution data still gets shown in the summary chart and in downloads.
-#SHOW_ACTUAL = True
+# SHOW_ACTUAL = True
 
 # Treemap use max value between tabs to calculate size. Default: True
 # Note: Pinto has some unusually large 2012 revenues due to refinancing, so this setting
@@ -65,36 +61,33 @@ INCLUDE_FINANCIAL_CHAPTERS_IN_BREAKDOWNS = True
 SEARCH_ENTITIES = False
 
 # Supported languages. Default: ('es', 'Castellano')
-LANGUAGES = (
-  ('es', 'Castellano'),
-)
-
+LANGUAGES = (('es', 'Castellano'),)
 
 # Facebook Aplication ID used in social_sharing temaplate. Default: ''
-# In order to get the ID create an app in https://developers.facebook.com/
-FACEBOOK_ID             = '1107147986070866'
+#  In order to get the ID create an app in https://developers.facebook.com/
+FACEBOOK_ID = '1107147986070866'
 
 # Google Analytics ID. Default: ''
-# In order to get the ID create a Google Analytics Acount in https://analytics.google.com/analytics/web/
-ANALYTICS_ID            = 'UA-77087919-1'
+#  In order to get the ID create a Google Analytics Acount in https://analytics.google.com/analytics/web/
+ANALYTICS_ID = 'UA-77087919-1'
 
 # Setup Data Source Budget link
-DATA_SOURCE_BUDGET      = 'http://www.ayto-pinto.es/presupuestos-municipales-2015'
+DATA_SOURCE_BUDGET = 'http://www.ayto-pinto.es/presupuestos-municipales-2015'
 
 # Setup Data Source Population link
-DATA_SOURCE_POPULATION  = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2861'
+DATA_SOURCE_POPULATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2881&L=0'
 
 # Setup Data Source Inflation link
-DATA_SOURCE_INFLATION   = 'http://www.ine.es/jaxiT3/Tabla.htm?t=10019&L=0'
+DATA_SOURCE_INFLATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=22350&L=0'
 
 # Setup Main Entity Web Url
-MAIN_ENTITY_WEB_URL     = 'http://www.ayto-pinto.es/'
+MAIN_ENTITY_WEB_URL = 'http://www.ayto-pinto.es/'
 
 # Setup Main Entity Legal Url (if empty we hide the link)
-MAIN_ENTITY_LEGAL_URL   = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
+MAIN_ENTITY_LEGAL_URL = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
 
 # External URL for Cookies Policy (if empty we use out template page/cookies.html)
-COOKIES_URL             = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
+COOKIES_URL = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
 
 # Allow overriding of default treemap color scheme
 # COLOR_SCALE = [ '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf' ]
