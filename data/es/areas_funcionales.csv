@@ -45,13 +45,16 @@
 1,3,6,0,Servicio de prevención y extinción de incendios
 1,5,0,0,Administración general de vivienda y urbanismo
 1,5,1,0,Urbanismo
+1,5,2,2,Conservación y rehabilitación de la edificación
 1,5,3,1,Acceso a los núcleos de población
 1,5,3,2,Pavimentación de vías públicas
+1,5,4,0,Servicios técnicos
 1,5,5,0,Vías públicas
 1,6,0,0,Administración general
 1,6,1,0,"Saneamiento, abastecimiento y distribución de aguas"
 1,6,2,0,"Recogida, eliminación y tratamiento de residuos"
 1,6,2,1,Recogida de residuos
+1,6,2,3,Tratamiento de residuos
 1,6,3,0,Limpieza viaria
 1,6,5,0,Alumbrado público
 1,6,9,0,Otros servicios de bienestar comunitario
@@ -59,36 +62,46 @@
 1,7,1,0,Parques y jardines
 1,7,2,0,Protección y mejora del medio ambiente
 1,7,2,1,"Protección contra la contaminación acústica, lumínica y atmosférica"
+1,7,3,0,Protección animal
 1,7,9,0,Otras actuaciones relacionadas con el medio ambiente
 2,3,0,0,Administración general de servicios sociales
 2,3,1,0,Acción social
 2,3,1,1,Administracion general de serv.sociales
 2,3,2,0,Promoción social
 2,3,3,0,Asistencia a personas dependientes
+2,3,4,0,Juventud e infancia
+2,3,5,0,Diversidad
 2,4,1,0,Fomento del empleo
+3,1,1,0,Promoción de la salubridad pública
 3,1,3,0,Acciones públicas relativas a la salud
 3,2,0,0,Administración general de educación
 3,2,0,4,Servicios complementarios de educación
 3,2,1,0,Educación preescolar y primaria
 3,2,3,0,Promoción educativa
+3,2,6,0,Servicios complementarios de educación
+3,2,7,0,Fomento de la convivencia ciudadana
 3,3,0,0,Administración general de cultura
 3,3,2,0,Bibliotecas y archivos
+3,3,2,1,Bibliotecas públicas
 3,3,3,0,Museos y artes plásticas
 3,3,4,0,Promoción cultural
 3,3,5,0,Artes escénicas
 3,3,6,0,Arqueología y protección del patrimonio histórico-artístico
 3,3,7,0,Ocio y tiempo libre
 3,3,8,0,Fiestas populares y festejos
+3,3,9,0,Promoción de la ciudad
 3,4,0,0,Administración general de deportes
 3,4,1,0,Promoción y fomento del deporte
 3,4,2,0,Instalaciones deportivas
 3,5,1,0,Juventud e infancia
+4,2,2,0,Industria
 4,3,0,0,"Administración general de comercio, turismo y PYMES."
 4,3,1,0,Comercio
 4,3,2,0,Ordenación y promoción turística
 4,3,3,0,Desarrollo empresarial
 4,3,9,0,Otras actuaciones sectoriales
 4,4,1,0,"Promoción, mantenimiento y desarrollo del transporte"
+4,4,1,1,Transporte colectivo urbano de viajeros
 4,4,2,0,Infraestructuras de transporte
 4,5,0,0,Administración general de infraestructuras
 4,5,4,0,Caminos vecinales
@@ -97,6 +110,8 @@
 4,9,1,0,Sociedad de la información
 4,9,2,0,Gestión del conocimiento
 4,9,3,0,Oficinas de defensa al consumidor
+4,9,4,0,Transparencia y buen gobierno
+4,9,5,0,Comunicación y prensa
 9,1,2,0,Órganos de gobierno
 9,2,0,0,Administración general
 9,2,2,0,Coordinación y organización institucional de entidades locales
@@ -104,6 +119,7 @@
 9,2,4,0,Participación ciudadana
 9,2,5,0,Atención a los ciudadanos
 9,2,6,0,Comunicaciones internas
+9,2,7,0,Cooperación al desarrollo
 9,2,9,0,Imprevistos y funciones no clasificadas
 9,3,1,0,Política económica y fiscal
 9,3,2,0,Gestión del sistema tributario
