@@ -9,6 +9,7 @@ payments_mapping = {
     '2018': {'fc_code': 3, 'date': 1, 'payee': 6, 'description': 7, 'amount': 4},
     '2019': {'fc_code': 3, 'date': 1, 'payee': 6, 'description': 7, 'amount': 4},
     '2020': {'fc_code': 3, 'date': 1, 'payee': 6, 'description': 7, 'amount': 4},
+    '2021': {'fc_code': 3, 'date': 1, 'payee': 6, 'description': 7, 'amount': 4},
 }
 
 
@@ -37,7 +38,7 @@ class PintoPaymentsLoader(PaymentsLoader):
 
         # In 2018 we don't get the functional code separately, so we use
         # the full budget heading
-        if budget.year in [2018, 2019, 2020] and fc_code:
+        if budget.year in [2018, 2019, 2020, 2021] and fc_code:
             fc_code = fc_code.split()[2]
 
         # We got some 2- digit codes or even empty ones, so we normalize them
