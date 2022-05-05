@@ -8,7 +8,7 @@ expenses_mapping = {
     '2018': {'fc_code': 2, 'full_ec_code': 3, 'description': 4, 'forecast_amount': 8, 'actual_amount': 11},
     '2019': {'fc_code': 2, 'full_ec_code': 3, 'description': 4, 'forecast_amount': 8, 'actual_amount': 11},
     '2020': {'fc_code': 2, 'full_ec_code': 3, 'description': 4, 'forecast_amount': 8, 'actual_amount': 11},
-    '2021': {'fc_code': 2, 'full_ec_code': 3, 'description': 4, 'forecast_amount': 8, 'actual_amount': 11},
+    '2022': {'fc_code': 1, 'full_ec_code': 2, 'description': 3, 'forecast_amount': 4, 'actual_amount': 7},
 }
 
 income_mapping = {
