@@ -63,10 +63,6 @@ SEARCH_ENTITIES = False
 # Supported languages. Default: ('es', 'Castellano')
 LANGUAGES = (('es', 'Castellano'),)
 
-# Google Analytics ID. Default: ''
-#  In order to get the ID create a Google Analytics Acount in https://analytics.google.com/analytics/web/
-ANALYTICS_ID = 'UA-77087919-1'
-
 # Setup Data Source Budget link
 DATA_SOURCE_BUDGET = 'http://www.ayto-pinto.es/presupuestos-municipales-2015'
 
