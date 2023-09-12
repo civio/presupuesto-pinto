@@ -64,22 +64,22 @@ SEARCH_ENTITIES = False
 LANGUAGES = (('es', 'Castellano'),)
 
 # Setup Data Source Budget link
-DATA_SOURCE_BUDGET = 'http://www.ayto-pinto.es/presupuestos-municipales-2015'
+DATA_SOURCE_BUDGET = 'https://www.ayto-pinto.es/presupuestos-municipales-2015'
 
 # Setup Data Source Population link
-DATA_SOURCE_POPULATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=2881&L=0'
+DATA_SOURCE_POPULATION = 'https://www.ine.es/jaxiT3/Tabla.htm?t=2881&L=0'
 
 # Setup Data Source Inflation link
-DATA_SOURCE_INFLATION = 'http://www.ine.es/jaxiT3/Tabla.htm?t=22350&L=0'
+DATA_SOURCE_INFLATION = 'https://www.ine.es/jaxiT3/Tabla.htm?t=22350&L=0'
 
 # Setup Main Entity Web Url
-MAIN_ENTITY_WEB_URL = 'http://www.ayto-pinto.es/'
+MAIN_ENTITY_WEB_URL = 'https://www.ayto-pinto.es/'
 
 # Setup Main Entity Legal Url (if empty we hide the link)
-MAIN_ENTITY_LEGAL_URL = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
+MAIN_ENTITY_LEGAL_URL = 'https://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
 
 # External URL for Cookies Policy (if empty we use out template page/cookies.html)
-COOKIES_URL = 'http://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
+COOKIES_URL = 'https://www.ayto-pinto.es/web/ayuntamiento-de-pinto/aviso-legal'
 
 # Allow overriding of default treemap color scheme
 # COLOR_SCALE = [ '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#e7969c', '#bcbd22', '#17becf' ]
